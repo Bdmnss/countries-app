@@ -4,7 +4,10 @@ export default function Hero() {
   return (
     <div className="hero">
       {splitted.map((item, index) => (
-        <h2 style={index % 2 === 0 ? { color: "red" } : { color: "white" }}>
+        <h2
+          key={index}
+          style={index % 2 === 0 ? { color: "red" } : { color: "white" }}
+        >
           {item}
         </h2>
       ))}

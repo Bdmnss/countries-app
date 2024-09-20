@@ -4,8 +4,8 @@ export default function Header() {
     <header>
       <h1>Travel To Georgia</h1>
       <nav>
-        {navigation.map((item) => (
-          <p>{item}</p>
+        {navigation.map((item, index) => (
+          <p key={index}>{item}</p>
         ))}
       </nav>
     </header>
