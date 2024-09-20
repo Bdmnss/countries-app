@@ -1,11 +1,12 @@
 export default function Header() {
+  const navigation = ["Home", "About", "Travel"];
   return (
     <header>
       <h1>Travel To Georgia</h1>
       <nav>
-        <p>Home</p>
-        <p>About</p>
-        <p>Travel</p>
+        {navigation.map((item) => (
+          <p>{item}</p>
+        ))}
       </nav>
     </header>
   );
