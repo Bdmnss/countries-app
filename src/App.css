@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 10rem;
+  border-bottom: 3px solid red;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: red;
+}
+
+header nav {
+  display: flex;
+  gap: 2rem;
+  color: black;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+header nav p {
+  cursor: pointer;
+}
+
+header nav p:hover {
+  color: red;
+}
