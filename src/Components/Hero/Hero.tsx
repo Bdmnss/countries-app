@@ -1,9 +1,11 @@
-export default function Hero() {
+import styles from "./Hero.module.css";
+
+const Hero: React.FC = () => {
   const travelToGeorgiaArr = ["TravelToGeorgia"];
   const splitted = travelToGeorgiaArr[0].split("");
   return (
-    <div className="hero-overlay">
-      <div className="hero">
+    <div className={styles["hero-overlay-styles"]}>
+      <div className={styles["hero-styles"]}>
         {splitted.map((item, index) => (
           <h2
             key={index}
@@ -15,4 +17,6 @@ export default function Hero() {
       </div>
     </div>
   );
-}
+};
+
+export default Hero;

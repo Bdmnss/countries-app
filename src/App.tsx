@@ -1,9 +1,9 @@
 import "./App.css";
-import Card from "./Components/Card";
-import Header from "./Components/Header";
-import Hero from "./Components/Hero";
+import Card from "./Components/Card/Card";
+import Header from "./Components/Header/Header";
+import Hero from "./Components/Hero/Hero";
 
-function App() {
+const App = () => {
   return (
     <>
       <Header />
@@ -13,6 +13,6 @@ function App() {
       </main>
     </>
   );
-}
+};
 
 export default App;

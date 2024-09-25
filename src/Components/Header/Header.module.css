@@ -1,0 +1,29 @@
+.header-styles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 10rem;
+  border-bottom: 3px solid red;
+}
+
+.header-h1-styles {
+  font-size: 3rem;
+  font-weight: bold;
+  color: red;
+}
+
+.header-nav-styles {
+  display: flex;
+  gap: 2rem;
+  color: black;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.header-nav-p-styles {
+  cursor: pointer;
+}
+
+.header-nav-p-styles:hover {
+  color: red;
+}
