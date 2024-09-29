@@ -1,9 +1,5 @@
 import styles from "./CardContent.module.css";
 
-interface CardContentProps {
-  children: React.ReactNode;
-}
-
 interface CountryData {
   name: string;
   capital: string;

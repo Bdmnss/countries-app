@@ -11,7 +11,7 @@ const Card: React.FC = () => {
         <header className={styles["card-header"]}>New</header>
       </CardHeader>
 
-      <CardContent data={data} children={undefined} />
+      <CardContent data={data} />
 
       <CardFooter>
         <footer className={styles["card-footer"]}>
