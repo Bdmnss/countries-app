@@ -1,4 +1,4 @@
-import data from "../../country.json";
+import data from "@/country.json";
 import CardContent from "./card-content/CardContent";
 import CardFooter from "./card-footer/CardFooter";
 import CardHeader from "./card-header/CardHeader";
@@ -11,15 +11,7 @@ const Card: React.FC = () => {
         <header className={styles["card-header"]}>New</header>
       </CardHeader>
 
-      <CardContent>
-        {data.map((item, index) => (
-          <div key={index} className={styles["card-content-styles"]}>
-            <h2>Country: {item.name}</h2>
-            <p>Capital: {item.capital}</p>
-            <p>Population: {item.population}</p>
-          </div>
-        ))}
-      </CardContent>
+      <CardContent data={data} children={undefined} />
 
       <CardFooter>
         <footer className={styles["card-footer"]}>
