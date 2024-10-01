@@ -1,0 +1,22 @@
+.notfound-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.notfound-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.notfound-content {
+  margin-bottom: 20px;
+}
+
+.home-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}

@@ -1,7 +1,7 @@
 import data from "@/country.json";
-import CardContent from "./card-content/CardContent";
-import CardFooter from "./card-footer/CardFooter";
-import CardHeader from "./card-header/CardHeader";
+import CardContent from "../card-content/CardContent";
+import CardFooter from "../card-footer/CardFooter";
+import CardHeader from "../card-header/CardHeader";
 import styles from "./Card.module.css";
 
 const Card: React.FC = () => {
