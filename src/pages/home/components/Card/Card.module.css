@@ -1,13 +1,28 @@
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .card-styles {
-  width: 60rem;
-  height: 60rem;
-  background-image: url(/public/images/card-image.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 90%;
+  height: 29rem;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-styles:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-header {
@@ -16,10 +31,12 @@
   background-color: rgba(255, 0, 0, 0.6);
   display: flex;
   align-items: center;
+  justify-content: center;
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  padding-left: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
 }
 
 .card-footer {
@@ -28,14 +45,17 @@
   background-color: rgba(0, 4, 255, 0.6);
   display: flex;
   align-items: center;
+  justify-content: center;
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  padding-left: 2rem;
+  padding: 1rem;
 }
 
 .card-footer-content {
   display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .card-footer-content:hover p,

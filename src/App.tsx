@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./layout/default/layout";
 import NotFound from "./pages/404";
 import Loading from "./Components/base/Loading/Loading";
+import ArticlePage from "./pages/article/views/article";
 
 const CardPage = lazy(() => import("./pages/home/views/list"));
 const About = lazy(() => import("./pages/about/views/list"));
@@ -18,6 +19,14 @@ const App = () => {
             element={
               <Suspense fallback={<Loading />}>
                 <CardPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/:id"
+            element={
+              <Suspense fallback={<Loading />}>
+                <ArticlePage />
               </Suspense>
             }
           />
