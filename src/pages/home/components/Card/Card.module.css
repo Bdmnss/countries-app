@@ -11,7 +11,6 @@
 .card-styles {
   width: 90%;
   height: 29rem;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
@@ -26,17 +25,37 @@
 }
 
 .card-header {
+  position: relative;
   width: 100%;
   height: 10rem;
-  background-color: rgba(255, 0, 0, 0.6);
+  background-color: #ff6b6b;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 1rem;
+  padding: 1rem 2rem;
   text-transform: uppercase;
+  border-bottom: 2px solid #e74c3c;
+}
+
+.card-header p {
+  margin: 0;
+}
+
+.card-header button:hover {
+  background-color: #c0392b;
+}
+
+.card-header button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .card-footer {
@@ -56,6 +75,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
 }
 
 .card-footer-content:hover p,
@@ -69,4 +89,19 @@
   width: 3rem;
   height: 3rem;
   fill: white;
+}
+
+.sort-select {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 2rem;
+}
+
+.sort-select:hover {
+  background-color: #2980b9;
 }
