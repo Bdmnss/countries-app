@@ -10,6 +10,7 @@
 
 .card-styles {
   width: 90%;
+  cursor: pointer;
   height: 29rem;
   display: flex;
   flex-direction: column;
@@ -22,6 +23,17 @@
 .card-styles:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-deleted {
+  opacity: 0.5;
+  background-color: #f8d7da;
+}
+
+.card-styles:hover .card-footer-content p,
+.card-styles:hover .card-footer-content .arrow-svg {
+  color: red;
+  fill: red;
 }
 
 .card-header {
@@ -44,10 +56,6 @@
   margin: 0;
 }
 
-.card-header button:hover {
-  background-color: #c0392b;
-}
-
 .card-header button {
   background-color: #e74c3c;
   color: white;
@@ -56,6 +64,10 @@
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+.card-header button:hover {
+  background-color: #c0392b;
 }
 
 .card-footer {
@@ -78,13 +90,6 @@
   cursor: pointer;
 }
 
-.card-footer-content:hover p,
-.card-footer-content:hover .arrow-svg {
-  cursor: pointer;
-  color: red;
-  fill: red;
-}
-
 .arrow-svg {
   width: 3rem;
   height: 3rem;
@@ -104,4 +109,18 @@
 
 .sort-select:hover {
   background-color: #2980b9;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
 }
