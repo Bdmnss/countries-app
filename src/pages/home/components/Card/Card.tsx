@@ -4,12 +4,18 @@ import CardContent from "../card-content/CardContent";
 import CardFooter from "../card-footer/CardFooter";
 import CardHeader from "../card-header/CardHeader";
 import styles from "./Card.module.css";
-import { useReducer, useEffect } from "react";
+import { useReducer, useEffect, useState } from "react";
 import { initialState, reducer } from "./cardReducer";
 import CardForm from "../card-form/CardForm";
 
 const Card: React.FC = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [errors, setErrors] = useState({
+    name: "",
+    duration: "",
+    price: "",
+    about: "",
+  });
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -48,6 +54,30 @@ const Card: React.FC = () => {
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const newErrors = {
+      name:
+        state.newCity.name.length < 3
+          ? "Name must be at least 3 characters long"
+          : "",
+      duration:
+        state.newCity.duration.length < 3
+          ? "Duration must be at least 3 characters long"
+          : "",
+      price: state.newCity.price <= 0 ? "Price must be greater than 0" : "",
+      about:
+        state.newCity.about.length < 10
+          ? "About must be at least 10 characters long"
+          : "",
+    };
+
+    setErrors(newErrors);
+
+    const hasErrors = Object.values(newErrors).some((error) => error !== "");
+    if (hasErrors) {
+      return;
+    }
+
     dispatch({ type: "ADD_CITY" });
   };
 
@@ -68,6 +98,7 @@ const Card: React.FC = () => {
         state={state}
         handleInputChange={handleInputChange}
         handleFormSubmit={handleFormSubmit}
+        errors={errors}
       />
       <select
         value={state.sortOrder}
