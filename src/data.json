@@ -1,29 +1,50 @@
 [
-    {
-        "id": 1,
-        "name": "Tbilisi",
-        "duration": "2 Weeks",
-        "price": 1000,
-        "about": "Tbilisi is the capital and largest city of Georgia, located in the southeastern part of Europe. Situated on the banks of the Kura River, it is known for its diverse architecture, which blends ancient, medieval, and modern styles. Tbilisi has a rich history influenced by various cultures, including Persian, Russian, and Ottoman. Its old town is famous for narrow winding streets, sulfur baths, and landmarks like the Narikala Fortress and the Sameba Cathedral. The city is also a cultural and economic hub, offering vibrant nightlife, art scenes, and a growing tech industry.",
-        "likes": 0,
-        "deleted": false
-    },
-    {
-        "id": 2,
-        "name": "Batumi",
-        "duration": "1 Week",
-        "price": 500,
-        "about": "Batumi is a seaside city on the Black Sea coast of Georgia. It is the capital of the Autonomous Republic of Adjara and the third-largest city in Georgia. Batumi is known for its subtropical climate, beaches, and modern architecture. The city has a rich history dating back to ancient times and has been influenced by various cultures, including Greek, Roman, Ottoman, and Russian. Batumi is a popular tourist destination, offering a mix of historic sites, natural beauty, and entertainment options. The city is home to landmarks like the Batumi Botanical Garden, the Alphabet Tower, and the Batumi Boulevard. It also hosts events like the Batumi International Film Festival and the Black Sea Jazz Festival.",
-        "likes": 0,
-        "deleted": false
-    },
-    {
-        "id": 3,
-        "name": "Kutaisi",
-        "duration": "1 Week",
-        "price": 500,
-        "about": "Kutaisi is the legislative capital of Georgia and the second-largest city in the country. It is located in the western part of Georgia, near the Rioni River. Kutaisi is known for its rich history, ancient architecture, and cultural heritage. The city has been inhabited since ancient times and has been influenced by various civilizations, including Greek, Roman, Byzantine, and Ottoman. Kutaisi is home to landmarks like the Bagrati Cathedral, the Gelati Monastery, and the Sataplia Cave. The city is also a hub for education, commerce, and transportation, with a growing tourism industry. Kutaisi is a gateway to the nearby attractions of the Imereti region, including the Prometheus Cave, the Okatse Canyon, and the Martvili Canyon.",
-        "likes": 0,
-        "deleted": false
+  {
+    "id": 1,
+    "name": "Tbilisi",
+    "duration": "2 Weeks",
+    "price": 1000,
+    "about": "Tbilisi is the capital and largest city of Georgia...",
+    "likes": 0,
+    "deleted": false,
+    "translations": {
+      "ka": {
+        "name": "თბილისი",
+        "duration": "2 კვირა",
+        "about": "თბილისი არის საქართველოს დედაქალაქი და უდიდესი ქალაქი..."
+      }
     }
+  },
+  {
+    "id": 2,
+    "name": "Batumi",
+    "duration": "1 Week",
+    "price": 500,
+    "about": "Batumi is a seaside city on the Black Sea coast of Georgia...",
+    "likes": 0,
+    "deleted": false,
+    "translations": {
+      "ka": {
+        "name": "ბათუმი",
+        "duration": "1 კვირა",
+        "about": "ბათუმი არის ზღვისპირა ქალაქი შავი ზღვის სანაპიროზე..."
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "Kutaisi",
+    "duration": "1 Week",
+    "price": 500,
+    "about": "Kutaisi is the legislative capital of Georgia...",
+    "likes": 0,
+    "deleted": false,
+    "translations": {
+      "ka": {
+        "name": "ქუთაისი",
+        "duration": "1 კვირა",
+        "about": "ქუთაისი არის საქართველოს საკანონმდებლო დედაქალაქი..."
+      }
+    }
+  }
 ]

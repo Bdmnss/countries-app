@@ -3,7 +3,7 @@ import styles from "./ArticlePage.module.css";
 import data from "@/data.json";
 
 const ArticlePage = () => {
-  const { id } = useParams();
+  const { id, lang } = useParams<{ id: string; lang: string }>();
   const articleId = parseInt(id ?? "0", 10);
   const article = data.find((item) => item.id === articleId);
 
@@ -11,17 +11,25 @@ const ArticlePage = () => {
     return <div className={styles["article-container"]}>Article not found</div>;
   }
 
+  const translatedArticle =
+    lang === "ka" && article.translations?.ka
+      ? article.translations.ka
+      : article;
+
   return (
     <div className={styles["article-container"]}>
-      <h1 className={styles["article-title"]}>{article.name}</h1>
+      <h1 className={styles["article-title"]}>{translatedArticle.name}</h1>
       <div className={styles["article-details"]}>
         <p>
-          <strong>Duration:</strong> {article.duration}
+          <strong>
+            {lang === "ka" ? "ტურის ხანგრძლივობა" : "Tour Length"}:
+          </strong>{" "}
+          {translatedArticle.duration}
         </p>
         <p>
-          <strong>Price:</strong> ${article.price}
+          <strong>{lang === "ka" ? "ფასი" : "Price"}:</strong> ${article.price}
         </p>
-        <p>{article.about}</p>
+        <p>{translatedArticle.about}</p>
       </div>
     </div>
   );

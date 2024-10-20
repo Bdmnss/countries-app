@@ -1,7 +1,8 @@
-import { NavLink, NavLinkRenderProps } from "react-router-dom";
+import { NavLink, NavLinkRenderProps, useParams } from "react-router-dom";
 import classes from "./Header.module.css";
 
 const Header: React.FC = () => {
+  const { lang } = useParams<{ lang: string }>();
   const navigation = ["Home", "About", "Contact"];
 
   const handleActiveNav = (props: NavLinkRenderProps) => {
@@ -16,20 +17,39 @@ const Header: React.FC = () => {
 
   return (
     <header className={classes["header-styles"]}>
-      <h1 className={classes["header-h1-styles"]}>Travel To Georgia</h1>
+      <h1 className={classes["header-h1-styles"]}>
+        {lang === "ka" ? "იმოგზაურე საქართველოში" : "Travel To Georgia"}
+      </h1>
       <nav className={classes["header-nav-styles"]}>
         {navigation.map((item, index) => (
           <NavLink
             key={index}
             className={handleActiveNav}
-            to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+            to={
+              item === "Home"
+                ? `/${lang}/cities`
+                : `/${lang}/${item.toLowerCase()}`
+            }
           >
-            {item}
+            {lang === "ka" ? translateToGeorgian(item) : item}
           </NavLink>
         ))}
       </nav>
     </header>
   );
+};
+
+const translateToGeorgian = (text: string) => {
+  switch (text) {
+    case "Home":
+      return "მთავარი";
+    case "About":
+      return "ჩვენს შესახებ";
+    case "Contact":
+      return "კონტაქტი";
+    default:
+      return text;
+  }
 };
 
 export default Header;
