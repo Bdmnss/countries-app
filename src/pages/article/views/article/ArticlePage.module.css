@@ -21,3 +21,10 @@
   color: #34495e;
   margin-bottom: 20px;
 }
+
+.article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}

@@ -30,3 +30,10 @@
   font-size: 0.875rem;
   margin-top: 5px;
 }
+
+.image-preview {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}

@@ -7,6 +7,7 @@
     "about": "Tbilisi is the capital and largest city of Georgia...",
     "likes": 0,
     "deleted": false,
+    "image": "/images/Tbilisi.jfif",
     "translations": {
       "ka": {
         "name": "თბილისი",
@@ -23,6 +24,7 @@
     "about": "Batumi is a seaside city on the Black Sea coast of Georgia...",
     "likes": 0,
     "deleted": false,
+    "image": "/images/Batumi.jpeg",
     "translations": {
       "ka": {
         "name": "ბათუმი",
@@ -39,6 +41,7 @@
     "about": "Kutaisi is the legislative capital of Georgia...",
     "likes": 0,
     "deleted": false,
+    "image": "/images/Kutaisi.jfif",
     "translations": {
       "ka": {
         "name": "ქუთაისი",

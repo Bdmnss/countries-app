@@ -6,6 +6,14 @@ export interface IData {
   about: string;
   likes: number;
   deleted: boolean;
+  image?: string;
+  translations: {
+    ka: {
+      name: string;
+      duration: string;
+      about: string;
+    };
+  };
 }
 
 export type TData = IData[];
@@ -27,6 +35,14 @@ const initialState: State = {
     about: "",
     likes: 0,
     deleted: false,
+    image: "",
+    translations: {
+      ka: {
+        name: "",
+        duration: "",
+        about: "",
+      },
+    },
   },
 };
 
@@ -44,11 +60,29 @@ const reducer = (state: State, action: Action): State => {
       return { ...state, data: action.payload };
     case "SET_SORT_ORDER":
       return { ...state, sortOrder: action.payload };
-    case "UPDATE_NEW_CITY":
+    case "UPDATE_NEW_CITY": {
+      const { name, value } = action.payload;
+      if (name.includes("_ka")) {
+        const field = name.split("_")[0];
+        return {
+          ...state,
+          newCity: {
+            ...state.newCity,
+            translations: {
+              ...state.newCity.translations,
+              ka: {
+                ...state.newCity.translations.ka,
+                [field]: value,
+              },
+            },
+          },
+        };
+      }
       return {
         ...state,
-        newCity: { ...state.newCity, [action.payload.name]: action.payload.value },
+        newCity: { ...state.newCity, [name]: value },
       };
+    }
     case "ADD_CITY":
       return {
         ...state,
@@ -61,6 +95,14 @@ const reducer = (state: State, action: Action): State => {
           about: "",
           likes: 0,
           deleted: false,
+          image: "",
+          translations: {
+            ka: {
+              name: "",
+              duration: "",
+              about: "",
+            },
+          },
         },
       };
     case "LIKE_CITY":

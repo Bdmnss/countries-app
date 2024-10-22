@@ -30,6 +30,11 @@ const ArticlePage = () => {
           <strong>{lang === "ka" ? "ფასი" : "Price"}:</strong> ${article.price}
         </p>
         <p>{translatedArticle.about}</p>
+        <img
+          src={article.image}
+          alt={translatedArticle.name}
+          className={styles["article-image"]}
+        />
       </div>
     </div>
   );

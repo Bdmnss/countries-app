@@ -15,7 +15,7 @@ const App = () => {
     <>
       <LanguageSwitcher />
       <Routes>
-        <Route path="/:lang" element={<Layout />}>
+        <Route path=":lang" element={<Layout />}>
           <Route
             path="cities"
             element={

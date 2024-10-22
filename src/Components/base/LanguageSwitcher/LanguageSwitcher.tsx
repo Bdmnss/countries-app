@@ -1,13 +1,17 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import styles from "./LanguageSwitcher.module.css";
 
 const LanguageSwitcher: React.FC = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { lang } = useParams<{ lang: string }>();
 
   const switchLanguage = (newLang: string) => {
-    navigate(`/${newLang}/cities`);
+    const pathSegments = location.pathname.split("/");
+    pathSegments[1] = newLang;
+    const newPath = pathSegments.join("/");
+    navigate(newPath);
   };
 
   return (
