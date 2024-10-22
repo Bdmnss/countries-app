@@ -37,3 +37,18 @@
   border-radius: 0.5rem;
   margin-top: 1rem;
 }
+
+.toggle-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+}
+
+.toggle-button:hover {
+  background-color: #2980b9;
+}
