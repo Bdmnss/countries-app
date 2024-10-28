@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom";
-import Header from "../../Components/base/Header/Header";
+import { Outlet } from 'react-router-dom';
+import Header from '../../Components/base/Header/Header';
 
 const Layout: React.FC = () => {
   return (

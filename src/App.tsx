@@ -1,16 +1,27 @@
-import { Suspense, lazy } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
-import Layout from "./layout/default/layout";
-import NotFound from "./pages/404";
-import Loading from "./Components/base/Loading/Loading";
-import ArticlePage from "./pages/article/views/article";
-import LanguageSwitcher from "./Components/base/LanguageSwitcher/LanguageSwitcher";
+import { Suspense, lazy, useReducer, useEffect } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Layout from './layout/default/layout';
+import NotFound from './pages/404';
+import Loading from './Components/base/Loading/Loading';
+import LanguageSwitcher from './Components/base/LanguageSwitcher/LanguageSwitcher';
+import {
+  initialState,
+  reducer,
+} from './pages/home/components/Card/cardReducer';
+import json from '@/data.json';
 
-const CardPage = lazy(() => import("./pages/home/views/list"));
-const About = lazy(() => import("./pages/about/views/list"));
-const Contact = lazy(() => import("./pages/contact/views/list"));
+const CardPage = lazy(() => import('./pages/home/views/list'));
+const About = lazy(() => import('./pages/about/views/list'));
+const Contact = lazy(() => import('./pages/contact/views/list'));
+const ArticlePage = lazy(() => import('./pages/article/views/article'));
 
 const App = () => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  useEffect(() => {
+    dispatch({ type: 'SET_DATA', payload: json });
+  }, []);
+
   return (
     <>
       <LanguageSwitcher />
@@ -20,7 +31,7 @@ const App = () => {
             path="cities"
             element={
               <Suspense fallback={<Loading />}>
-                <CardPage />
+                <CardPage state={state} dispatch={dispatch} />
               </Suspense>
             }
           />
@@ -28,7 +39,7 @@ const App = () => {
             path="cities/:id"
             element={
               <Suspense fallback={<Loading />}>
-                <ArticlePage />
+                <ArticlePage state={state} />
               </Suspense>
             }
           />
@@ -49,7 +60,7 @@ const App = () => {
             }
           />
         </Route>
-        <Route path="/" element={<Navigate to={"/ka/cities"} />} />
+        <Route path="/" element={<Navigate to={'/ka/cities'} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
