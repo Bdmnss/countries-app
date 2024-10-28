@@ -1,7 +1,6 @@
-import { v4 as uuidv4 } from 'uuid';
 
 export interface IData {
-  id: string; // Change id type to string
+  id: string;
   name: string;
   duration: string;
   price: number;
@@ -30,7 +29,7 @@ const initialState: State = {
   data: [],
   sortOrder: 'asc',
   newCity: {
-    id: uuidv4(), // Use uuid to generate a unique id
+    id: Math.random().toString(),
     name: '',
     duration: '',
     price: 0,
@@ -56,8 +55,8 @@ type Action =
       payload: { name: string; value: string | number };
     }
   | { type: 'ADD_CITY' }
-  | { type: 'LIKE_CITY'; payload: string } // Change payload type to string
-  | { type: 'DELETE_CITY'; payload: string }; // Change payload type to string
+  | { type: 'LIKE_CITY'; payload: string }
+  | { type: 'DELETE_CITY'; payload: string };
 
 const reducer = (state: State, action: Action): State => {
   switch (action.type) {
@@ -91,9 +90,9 @@ const reducer = (state: State, action: Action): State => {
     case 'ADD_CITY':
       return {
         ...state,
-        data: [...state.data, { ...state.newCity, id: uuidv4() }], // Generate a new unique id
+        data: [...state.data, { ...state.newCity, id: Math.random().toString() }],
         newCity: {
-          id: uuidv4(), // Generate a new unique id
+          id: Math.random().toString(),
           name: '',
           duration: '',
           price: 0,

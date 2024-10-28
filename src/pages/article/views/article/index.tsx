@@ -10,11 +10,6 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ state }) => {
   const { id, lang } = useParams<{ id: string; lang: string }>();
   const articleId = id ?? '';
 
-  // Debugging statements
-  console.log('URL id:', id);
-  console.log('Parsed articleId:', articleId);
-  console.log('State data:', state.data);
-
   const article = state.data.find((item) => item.id === articleId);
 
   if (!article) {
