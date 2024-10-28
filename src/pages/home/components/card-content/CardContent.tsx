@@ -1,8 +1,8 @@
-import { useParams } from "react-router-dom";
-import styles from "./CardContent.module.css";
+import { useParams } from 'react-router-dom';
+import styles from './CardContent.module.css';
 
 interface CountryData {
-  id: number;
+  id: string;
   name: string;
   duration: string;
   price: number;
@@ -23,19 +23,19 @@ const CardContent: React.FC<CardContentProps> = ({ data }) => {
   const { lang } = useParams<{ lang: string }>();
 
   const translatedData =
-    lang === "ka" && data.translations?.ka ? data.translations.ka : data;
+    lang === 'ka' && data.translations?.ka ? data.translations.ka : data;
 
   return (
-    <div className={styles["card-content-styles"]}>
+    <div className={styles['card-content-styles']}>
       <h2>
-        {lang === "ka" ? "ქალაქი" : "City"}: {translatedData.name}
+        {lang === 'ka' ? 'ქალაქი' : 'City'}: {translatedData.name}
       </h2>
       <p>
-        {lang === "ka" ? "ტურის ხანგრძლივობა" : "Tour Length"}:{" "}
+        {lang === 'ka' ? 'ტურის ხანგრძლივობა' : 'Tour Length'}:{' '}
         {translatedData.duration}
       </p>
       <p>
-        {lang === "ka" ? "ფასი" : "Price"}: {data.price}$
+        {lang === 'ka' ? 'ფასი' : 'Price'}: {data.price}$
       </p>
     </div>
   );

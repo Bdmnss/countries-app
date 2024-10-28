@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "name": "Tbilisi",
     "duration": "2 Weeks",
     "price": 1000,
@@ -17,7 +17,7 @@
     }
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "Batumi",
     "duration": "1 Week",
     "price": 500,
@@ -34,7 +34,7 @@
     }
   },
   {
-    "id": 3,
+    "id": "3",
     "name": "Kutaisi",
     "duration": "1 Week",
     "price": 500,

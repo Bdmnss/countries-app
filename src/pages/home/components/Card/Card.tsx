@@ -50,19 +50,19 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
     dispatch({ type: 'SET_DATA', payload: json });
   }, [dispatch]);
 
-  const handleCardClick = (id: number) => {
+  const handleCardClick = (id: string) => {
     const city = state.data.find((item) => item.id === id);
     if (city) {
       navigate(`/${lang}/cities/${id}`, { state: { city } });
     }
   };
 
-  const handleLike = (e: React.MouseEvent<HTMLButtonElement>, id: number) => {
+  const handleLike = (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
     e.stopPropagation();
     dispatch({ type: 'LIKE_CITY', payload: id });
   };
 
-  const handleDelete = (e: React.MouseEvent<HTMLButtonElement>, id: number) => {
+  const handleDelete = (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
     e.stopPropagation();
     dispatch({ type: 'DELETE_CITY', payload: id });
   };

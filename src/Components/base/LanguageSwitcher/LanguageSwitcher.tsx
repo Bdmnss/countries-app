@@ -1,6 +1,6 @@
-import React from "react";
-import { useNavigate, useParams, useLocation } from "react-router-dom";
-import styles from "./LanguageSwitcher.module.css";
+import React from 'react';
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
+import styles from './LanguageSwitcher.module.css';
 
 const LanguageSwitcher: React.FC = () => {
   const navigate = useNavigate();
@@ -8,25 +8,25 @@ const LanguageSwitcher: React.FC = () => {
   const { lang } = useParams<{ lang: string }>();
 
   const switchLanguage = (newLang: string) => {
-    const pathSegments = location.pathname.split("/");
+    const pathSegments = location.pathname.split('/');
     pathSegments[1] = newLang;
-    const newPath = pathSegments.join("/");
+    const newPath = pathSegments.join('/');
     navigate(newPath);
   };
 
   return (
-    <div className={styles["language-switcher"]}>
+    <div className={styles['language-switcher']}>
       <button
-        className={styles["language-button"]}
-        onClick={() => switchLanguage("ka")}
-        disabled={lang === "ka"}
+        className={styles['language-button']}
+        onClick={() => switchLanguage('ka')}
+        disabled={lang === 'ka'}
       >
         Georgian
       </button>
       <button
-        className={styles["language-button"]}
-        onClick={() => switchLanguage("en")}
-        disabled={lang === "en"}
+        className={styles['language-button']}
+        onClick={() => switchLanguage('en')}
+        disabled={lang === 'en'}
       >
         English
       </button>
