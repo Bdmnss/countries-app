@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import styles from "./CardForm.module.css";
-import { IData } from "../Card/cardReducer";
+import React, { useState } from 'react';
+import styles from './CardForm.module.css';
+import { IData } from '../Card/cardReducer';
 
 interface CardFormProps {
   state: {
@@ -27,27 +27,27 @@ const CardForm: React.FC<CardFormProps> = ({
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
-    if (file && (file.type === "image/jpeg" || file.type === "image/png")) {
+    if (file && (file.type === 'image/jpeg' || file.type === 'image/png')) {
       const reader = new FileReader();
       reader.onloadend = () => {
         setImage(reader.result as string);
         handleInputChange({
           target: {
-            name: "image",
+            name: 'image',
             value: reader.result as string,
           },
         } as React.ChangeEvent<HTMLInputElement>);
       };
       reader.readAsDataURL(file);
     } else {
-      alert("Please upload a JPG or PNG file.");
+      alert('Please upload a JPG or PNG file.');
     }
   };
 
   const handleTranslationChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    const [field, lang] = name.split("_");
-    if (lang === "ka") {
+    const [field, lang] = name.split('_');
+    if (lang === 'ka') {
       state.newCity.translations = {
         ...state.newCity.translations,
         ka: {
@@ -66,9 +66,9 @@ const CardForm: React.FC<CardFormProps> = ({
   console.log(state.newCity);
 
   return (
-    <form onSubmit={handleFormSubmit} className={styles["city-form"]}>
+    <form onSubmit={handleFormSubmit} className={styles['city-form']}>
       <h3>English</h3>
-      <div className={styles["form-group"]}>
+      <div className={styles['form-group']}>
         <input
           type="text"
           name="name"
@@ -77,10 +77,10 @@ const CardForm: React.FC<CardFormProps> = ({
           placeholder="City Name"
         />
         {errors.name && (
-          <p className={styles["error-message"]}>{errors.name}</p>
+          <p className={styles['error-message']}>{errors.name}</p>
         )}
       </div>
-      <div className={styles["form-group"]}>
+      <div className={styles['form-group']}>
         <input
           type="text"
           name="duration"
@@ -89,10 +89,10 @@ const CardForm: React.FC<CardFormProps> = ({
           placeholder="Tour Length"
         />
         {errors.duration && (
-          <p className={styles["error-message"]}>{errors.duration}</p>
+          <p className={styles['error-message']}>{errors.duration}</p>
         )}
       </div>
-      <div className={styles["form-group"]}>
+      <div className={styles['form-group']}>
         <input
           type="number"
           name="price"
@@ -101,10 +101,10 @@ const CardForm: React.FC<CardFormProps> = ({
           placeholder="Price"
         />
         {errors.price && (
-          <p className={styles["error-message"]}>{errors.price}</p>
+          <p className={styles['error-message']}>{errors.price}</p>
         )}
       </div>
-      <div className={styles["form-group"]}>
+      <div className={styles['form-group']}>
         <input
           type="text"
           name="about"
@@ -113,56 +113,56 @@ const CardForm: React.FC<CardFormProps> = ({
           placeholder="About"
         />
         {errors.about && (
-          <p className={styles["error-message"]}>{errors.about}</p>
+          <p className={styles['error-message']}>{errors.about}</p>
         )}
       </div>
       <button
         type="button"
         onClick={toggleGeorgianFields}
-        className={styles["toggle-button"]}
+        className={styles['toggle-button']}
       >
-        {showGeorgianFields ? "Hide Georgian Fields" : "Show Georgian Fields"}
+        {showGeorgianFields ? 'Hide Georgian Fields' : 'Show Georgian Fields'}
       </button>
       {showGeorgianFields && (
         <>
           <h3>Georgian</h3>
-          <div className={styles["form-group"]}>
+          <div className={styles['form-group']}>
             <input
               type="text"
               name="name_ka"
-              value={state.newCity.translations?.ka.name || ""}
+              value={state.newCity.translations?.ka.name || ''}
               onChange={handleTranslationChange}
               placeholder="City Name (Georgian)"
             />
           </div>
-          <div className={styles["form-group"]}>
+          <div className={styles['form-group']}>
             <input
               type="text"
               name="duration_ka"
-              value={state.newCity.translations?.ka.duration || ""}
+              value={state.newCity.translations?.ka.duration || ''}
               onChange={handleTranslationChange}
               placeholder="Tour Length (Georgian)"
             />
           </div>
-          <div className={styles["form-group"]}>
+          <div className={styles['form-group']}>
             <input
               type="text"
               name="about_ka"
-              value={state.newCity.translations?.ka.about || ""}
+              value={state.newCity.translations?.ka.about || ''}
               onChange={handleTranslationChange}
               placeholder="About (Georgian)"
             />
           </div>
         </>
       )}
-      <div className={styles["form-group"]}>
+      <div className={styles['form-group']}>
         <input
           type="file"
           accept="image/jpeg, image/png"
           onChange={handleFileChange}
         />
         {image && (
-          <img src={image} alt="Preview" className={styles["image-preview"]} />
+          <img src={image} alt="Preview" className={styles['image-preview']} />
         )}
       </div>
       <button type="submit">Add City</button>

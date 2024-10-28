@@ -124,4 +124,4 @@ const reducer = (state: State, action: Action): State => {
   }
 };
 
-export { initialState, reducer };
+export { initialState, reducer, type Action, type State };
