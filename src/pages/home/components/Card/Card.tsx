@@ -6,7 +6,7 @@ import CardHeader from '../card-header/CardHeader';
 import styles from './Card.module.css';
 import { State, Action } from './cardReducer';
 import CardForm from '../card-form/CardForm';
-import OTPInput from '../OTP/OtpInput';
+import OTPInput from '../OTP/OTPInput';
 import json from '@/data.json';
 
 interface CardProps {

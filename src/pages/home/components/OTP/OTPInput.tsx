@@ -43,28 +43,38 @@ const OTPInput: React.FC<OTPInputProps> = ({ numInputs, onChange }) => {
     }
   };
 
-  const handlePaste = (e: React.ClipboardEvent<HTMLInputElement>) => {
+  const handlePaste = (
+    e: React.ClipboardEvent<HTMLInputElement>,
+    startIndex: number
+  ) => {
     e.preventDefault();
-    const pasteData = e.clipboardData.getData('text').slice(0, numInputs);
-    const newOtp = pasteData
-      .split('')
-      .map((char, index) => (/^[0-9]$/.test(char) ? char : otp[index]));
+    const pasteData = e.clipboardData
+      .getData('text')
+      .slice(0, numInputs - startIndex);
+    const newOtp = [...otp];
+    pasteData.split('').forEach((char, index) => {
+      if (/^[0-9]$/.test(char)) {
+        newOtp[startIndex + index] = char;
+      }
+    });
     setOtp(newOtp);
     onChange(newOtp.join(''));
-    inputsRef.current[Math.min(pasteData.length - 1, numInputs - 1)].focus();
+    inputsRef.current[
+      Math.min(startIndex + pasteData.length - 1, numInputs - 1)
+    ].focus();
   };
 
   return (
     <div className={styles['otp-container']}>
-      {otp.map((digit, index) => (
+      {Array.from({ length: numInputs }).map((_, index) => (
         <input
           key={index}
           type="text"
           maxLength={1}
-          value={digit}
+          value={otp[index] || ''}
           onChange={(e) => handleChange(e, index)}
           onKeyDown={(e) => handleKeyDown(e, index)}
-          onPaste={handlePaste}
+          onPaste={(e) => handlePaste(e, index)}
           ref={(el) => (inputsRef.current[index] = el!)}
           className={styles['otp-input']}
         />
