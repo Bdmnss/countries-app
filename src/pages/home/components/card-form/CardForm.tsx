@@ -63,8 +63,6 @@ const CardForm: React.FC<CardFormProps> = ({
     setShowGeorgianFields(!showGeorgianFields);
   };
 
-  console.log(state.newCity);
-
   return (
     <form onSubmit={handleFormSubmit} className={styles['city-form']}>
       <h3>English</h3>

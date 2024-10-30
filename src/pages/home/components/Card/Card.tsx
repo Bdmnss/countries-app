@@ -6,6 +6,7 @@ import CardHeader from '../card-header/CardHeader';
 import styles from './Card.module.css';
 import { State, Action } from './cardReducer';
 import CardForm from '../card-form/CardForm';
+import OTPInput from '../OTP/OtpInput';
 import json from '@/data.json';
 
 interface CardProps {
@@ -43,6 +44,8 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
     price: '',
     about: '',
   });
+  const [otp, setOtp] = useState('');
+
   const navigate = useNavigate();
   const { lang } = useParams<{ lang: string }>();
 
@@ -109,6 +112,10 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
     dispatch({ type: 'ADD_CITY' });
   };
 
+  const handleOtpChange = (newOtp: string) => {
+    setOtp(newOtp);
+  };
+
   const sortedData = [...state.data]
     .filter((item) => !item.deleted)
     .sort((a, b) => {
@@ -122,6 +129,11 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
 
   return (
     <div className={styles['card-container']}>
+      <div className={styles['otp-section']}>
+        <h2>Enter OTP</h2>
+        <OTPInput numInputs={6} onChange={handleOtpChange} />
+        <p>Entered OTP: {otp}</p>
+      </div>
       <CardForm
         state={state}
         handleInputChange={handleInputChange}

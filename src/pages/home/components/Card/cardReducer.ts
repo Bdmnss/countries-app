@@ -1,4 +1,3 @@
-
 export interface IData {
   id: string;
   name: string;
@@ -90,7 +89,10 @@ const reducer = (state: State, action: Action): State => {
     case 'ADD_CITY':
       return {
         ...state,
-        data: [...state.data, { ...state.newCity, id: Math.random().toString() }],
+        data: [
+          ...state.data,
+          { ...state.newCity, id: Math.random().toString() },
+        ],
         newCity: {
           id: Math.random().toString(),
           name: '',
