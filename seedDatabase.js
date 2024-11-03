@@ -18,7 +18,7 @@ const fetchCountries = async () => {
 };
 
 const processCountries = (countries) => {
-  return countries.map(country => {
+  return countries.map((country) => {
     return {
       id: uuidv4(),
       name: country.name.common,

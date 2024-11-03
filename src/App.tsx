@@ -19,15 +19,16 @@ const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/countries')
-      .then(response => {
+    axios
+      .get('http://localhost:5000/countries')
+      .then((response) => {
         if (Array.isArray(response.data)) {
           dispatch({ type: 'SET_DATA', payload: response.data });
         } else {
           console.error('Fetched data is not an array:', response.data);
         }
       })
-      .catch(error => {
+      .catch((error) => {
         console.error('Error fetching countries:', error);
       });
   }, []);
@@ -71,7 +72,7 @@ const App = () => {
           />
           <Route path="*" element={<NotFound />} />
         </Route>
-        <Route path="*" element={<Navigate to="/en" />} />
+        <Route path="*" element={<Navigate to="/en/cities" />} />
       </Routes>
     </>
   );

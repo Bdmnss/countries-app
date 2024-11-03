@@ -9,11 +9,12 @@ const ArticlePage: React.FC = () => {
   const [article, setArticle] = useState<IData | null>(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/countries/${id}`)
-      .then(response => {
+    axios
+      .get(`http://localhost:5000/countries/${id}`)
+      .then((response) => {
         setArticle(response.data);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error('Error fetching country:', error);
       });
   }, [id]);
