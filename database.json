@@ -1,0 +1,174 @@
+{
+  "countries": [
+    {
+      "id": "866130db-788f-4475-a534-ad5cd89ccfc3",
+      "name": "South Georgia",
+      "duration": "1 Week",
+      "price": 3327,
+      "about": "Antarctic",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "South Georgia",
+          "duration": "1 კვირა",
+          "about": "Antarctic"
+        }
+      }
+    },
+    {
+      "id": "a3c3df2a-f227-40ad-8825-2b1c286dc7c0",
+      "name": "Grenada",
+      "duration": "1 Week",
+      "price": 8659,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Grenada",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "33ea5796-d6ac-4273-b218-cca1a8f9141f",
+      "name": "Switzerland",
+      "duration": "1 Week",
+      "price": 9435,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Switzerland",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "bcb81d52-acb7-4994-be8f-3fc816a26560",
+      "name": "Sierra Leone",
+      "duration": "1 Week",
+      "price": 9956,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Sierra Leone",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "10782792-a5cb-47d5-ab5d-c7de4ac90003",
+      "name": "Hungary",
+      "duration": "1 Week",
+      "price": 8412,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Hungary",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "b0e88e3e-3ba2-4cf2-99f3-2c8ca783cd96",
+      "name": "Taiwan",
+      "duration": "1 Week",
+      "price": 1445,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Taiwan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "26deb58b-6180-45ef-9388-e7a1d65a44ae",
+      "name": "Wallis and Futuna",
+      "duration": "1 Week",
+      "price": 2075,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Wallis and Futuna",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "819fbd7f-3b3e-48da-a777-e46a7f400c16",
+      "name": "Barbados",
+      "duration": "1 Week",
+      "price": 871,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Barbados",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "c9d232ce-dad7-43d1-906a-27d2bead8491",
+      "name": "Pitcairn Islands",
+      "duration": "1 Week",
+      "price": 4141,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Pitcairn Islands",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "deec9190-86fb-41a6-8ab2-60246a59cb4a",
+      "name": "Ivory Coast",
+      "duration": "1 Week",
+      "price": 6850,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Ivory Coast",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    }
+  ]
+}

@@ -1,13 +1,13 @@
+import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import CardContent from '../card-content/CardContent';
 import CardFooter from '../card-footer/CardFooter';
 import CardHeader from '../card-header/CardHeader';
 import styles from './Card.module.css';
-import { State, Action } from './cardReducer';
+import { State, Action, IData } from './cardReducer';
 import CardForm from '../card-form/CardForm';
 import OTPInput from '../OTP/OTPInput';
-import json from '@/data.json';
 
 interface CardProps {
   state: State;
@@ -32,6 +32,8 @@ const translateToGeorgian = (text: string) => {
       return 'წაშლა';
     case 'Recover':
       return 'აღდგენა';
+    case 'Edit':
+      return 'რედაქტირება';
     default:
       return text;
   }
@@ -45,12 +47,24 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
     about: '',
   });
   const [otp, setOtp] = useState('');
+  const [editingCity, setEditingCity] = useState<IData | null>(null);
 
   const navigate = useNavigate();
   const { lang } = useParams<{ lang: string }>();
 
   useEffect(() => {
-    dispatch({ type: 'SET_DATA', payload: json });
+    axios.get('http://localhost:5000/countries')
+      .then(response => {
+        if (Array.isArray(response.data)) {
+          console.log('Fetched data:', response.data);
+          dispatch({ type: 'SET_DATA', payload: response.data });
+        } else {
+          console.error('Fetched data is not an array:', response.data);
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching countries:', error);
+      });
   }, [dispatch]);
 
   const handleCardClick = (id: string) => {
@@ -67,7 +81,21 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
 
   const handleDelete = (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
     e.stopPropagation();
-    dispatch({ type: 'DELETE_CITY', payload: id });
+    axios.delete(`http://localhost:5000/countries/${id}`)
+      .then(() => {
+        dispatch({ type: 'DELETE_CITY', payload: id });
+      })
+      .catch(error => {
+        console.error('Error deleting country:', error);
+      });
+  };
+
+  const handleEditClick = (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
+    e.stopPropagation();
+    const city = state.data.find((item) => item.id === id);
+    if (city) {
+      setEditingCity(city);
+    }
   };
 
   const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -81,6 +109,30 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
       type: 'UPDATE_NEW_CITY',
       payload: { name, value: name === 'price' ? Number(value) : value },
     });
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        dispatch({
+          type: 'UPDATE_NEW_CITY',
+          payload: { name: 'image', value: reader.result as string },
+        });
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const handleEditInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (editingCity) {
+      const { name, value } = e.target;
+      setEditingCity({
+        ...editingCity,
+        [name]: name === 'price' ? Number(value) : value,
+      });
+    }
   };
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -109,14 +161,34 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
       return;
     }
 
-    dispatch({ type: 'ADD_CITY' });
+    axios.post('http://localhost:5000/countries', state.newCity)
+      .then(response => {
+        dispatch({ type: 'ADD_CITY', payload: response.data });
+      })
+      .catch(error => {
+        console.error('Error adding country:', error);
+      });
   };
+
+  const handleEditFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  if (editingCity) {
+    axios.put(`http://localhost:5000/countries/${editingCity.id}`, editingCity)
+      .then(response => {
+        dispatch({ type: 'UPDATE_CITY', payload: response.data });
+        setEditingCity(null);
+      })
+      .catch(error => {
+        console.error('Error updating country:', error);
+      });
+  }
+};
 
   const handleOtpChange = (newOtp: string) => {
     setOtp(newOtp);
   };
 
-  const sortedData = [...state.data]
+  const sortedData = Array.isArray(state.data) ? [...state.data]
     .filter((item) => !item.deleted)
     .sort((a, b) => {
       if (state.sortOrder === 'asc') {
@@ -125,7 +197,7 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
         return b.likes - a.likes;
       }
     })
-    .concat(state.data.filter((item) => item.deleted));
+    .concat(state.data.filter((item) => item.deleted)) : [];
 
   return (
     <div className={styles['card-container']}>
@@ -138,8 +210,44 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
         state={state}
         handleInputChange={handleInputChange}
         handleFormSubmit={handleFormSubmit}
+        handleFileChange={handleFileChange}
         errors={errors}
       />
+      {editingCity && (
+        <form onSubmit={handleEditFormSubmit}>
+          <h2>Edit Country</h2>
+          <input
+            type="text"
+            name="name"
+            value={editingCity.name}
+            onChange={handleEditInputChange}
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            name="duration"
+            value={editingCity.duration}
+            onChange={handleEditInputChange}
+            placeholder="Duration"
+          />
+          <input
+            type="number"
+            name="price"
+            value={editingCity.price}
+            onChange={handleEditInputChange}
+            placeholder="Price"
+          />
+          <input
+            type="text"
+            name="about"
+            value={editingCity.about}
+            onChange={handleEditInputChange}
+            placeholder="About"
+          />
+          <button type="submit">Save</button>
+          <button type="button" onClick={() => setEditingCity(null)}>Cancel</button>
+        </form>
+      )}
       <select
         value={state.sortOrder}
         onChange={handleSortChange}
@@ -182,6 +290,9 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
               <div className={styles['card-footer-content']}>
                 <p>{lang === 'ka' ? translateToGeorgian('View') : 'View'}</p>
               </div>
+              <button onClick={(e) => handleEditClick(e, item.id)}>
+                {lang === 'ka' ? translateToGeorgian('Edit') : 'Edit'}
+              </button>
               <button onClick={(e) => handleDelete(e, item.id)}>
                 {lang === 'ka'
                   ? item.deleted

@@ -9,7 +9,7 @@ import {
   initialState,
   reducer,
 } from './pages/home/components/Card/cardReducer';
-import json from '@/data.json';
+import axios from 'axios';
 
 const CardPage = lazy(() => import('./pages/home/views/list'));
 const About = lazy(() => import('./pages/about/views/list'));
@@ -19,7 +19,17 @@ const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    dispatch({ type: 'SET_DATA', payload: json });
+    axios.get('http://localhost:5000/countries')
+      .then(response => {
+        if (Array.isArray(response.data)) {
+          dispatch({ type: 'SET_DATA', payload: response.data });
+        } else {
+          console.error('Fetched data is not an array:', response.data);
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching countries:', error);
+      });
   }, []);
 
   return (
@@ -39,7 +49,7 @@ const App = () => {
             path="cities/:id"
             element={
               <Suspense fallback={<Loading />}>
-                <ArticlePage state={state} />
+                <ArticlePage />
               </Suspense>
             }
           />
@@ -59,9 +69,9 @@ const App = () => {
               </Suspense>
             }
           />
+          <Route path="*" element={<NotFound />} />
         </Route>
-        <Route path="/" element={<Navigate to={'/ka/cities'} />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/en" />} />
       </Routes>
     </>
   );

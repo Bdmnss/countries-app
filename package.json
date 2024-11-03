@@ -11,9 +11,14 @@
     "prettier": "prettier . --write",
     "preview": "vite preview",
     "prepare": "husky",
-    "ts-check": "tsc -b"
+    "ts-check": "tsc -b",
+    "start:json-server": "json-server --watch database.json --port 5000",
+    "yarn:start:json-server": "yarn start:json-server",
+    "seed-db": "node seedDatabase.js"
   },
   "dependencies": {
+    "axios": "^1.7.7",
+    "json-server": "^1.0.0-beta.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",

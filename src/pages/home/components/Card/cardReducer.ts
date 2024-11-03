@@ -53,9 +53,10 @@ type Action =
       type: 'UPDATE_NEW_CITY';
       payload: { name: string; value: string | number };
     }
-  | { type: 'ADD_CITY' }
+  | { type: 'ADD_CITY'; payload: IData }
   | { type: 'LIKE_CITY'; payload: string }
-  | { type: 'DELETE_CITY'; payload: string };
+  | { type: 'DELETE_CITY'; payload: string }
+  | { type: 'UPDATE_CITY'; payload: IData };
 
 const reducer = (state: State, action: Action): State => {
   switch (action.type) {
@@ -121,10 +122,13 @@ const reducer = (state: State, action: Action): State => {
     case 'DELETE_CITY':
       return {
         ...state,
+        data: state.data.filter((item) => item.id !== action.payload),
+      };
+    case 'UPDATE_CITY':
+      return {
+        ...state,
         data: state.data.map((item) =>
-          item.id === action.payload
-            ? { ...item, deleted: !item.deleted }
-            : item
+          item.id === action.payload.id ? action.payload : item
         ),
       };
     default:

@@ -1,54 +1,51 @@
-.city-form {
+.card-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.city-form input {
+.card-form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-form input[type="text"],
+.card-form input[type="number"],
+.card-form input[type="file"] {
   padding: 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
-.city-form button {
-  background-color: #2ecc71;
-  color: white;
+.card-form input[type="text"]:focus,
+.card-form input[type="number"]:focus,
+.card-form input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.card-form button {
+  padding: 0.75rem;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.city-form button:hover {
-  background-color: #27ae60;
+.card-form button:hover {
+  background-color: #0056b3;
 }
 
-.error-message {
+.error {
   color: red;
   font-size: 0.875rem;
-  margin-top: 5px;
-}
-
-.image-preview {
-  width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  margin-top: 1rem;
-}
-
-.toggle-button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-bottom: 1rem;
-}
-
-.toggle-button:hover {
-  background-color: #2980b9;
 }
