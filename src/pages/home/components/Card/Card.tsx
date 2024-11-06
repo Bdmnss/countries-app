@@ -1,5 +1,4 @@
-import axios from 'axios';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import CardContent from '../card-content/CardContent';
 import CardFooter from '../card-footer/CardFooter';
@@ -9,6 +8,11 @@ import { State, Action, IData } from './cardReducer';
 import CardForm from '../card-form/CardForm';
 import OTPInput from '../OTP/OTPInput';
 import EditForm from '../editForm.tsx/EditForm';
+import {
+  useAddCountry,
+  useUpdateCountry,
+  useDeleteCountry,
+} from '../../../../api/countriesApi';
 
 interface CardProps {
   state: State;
@@ -54,21 +58,9 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
   const navigate = useNavigate();
   const { lang } = useParams<{ lang: string }>();
 
-  useEffect(() => {
-    axios
-      .get('http://localhost:5000/countries')
-      .then((response) => {
-        if (Array.isArray(response.data)) {
-          console.log('Fetched data:', response.data);
-          dispatch({ type: 'SET_DATA', payload: response.data });
-        } else {
-          console.error('Fetched data is not an array:', response.data);
-        }
-      })
-      .catch((error) => {
-        console.error('Error fetching countries:', error);
-      });
-  }, [dispatch]);
+  const addCountryMutation = useAddCountry();
+  const updateCountryMutation = useUpdateCountry();
+  const deleteCountryMutation = useDeleteCountry();
 
   const handleCardClick = (id: string) => {
     const city = state.data.find((item) => item.id === id);
@@ -84,14 +76,7 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
 
   const handleDelete = (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
     e.stopPropagation();
-    axios
-      .delete(`http://localhost:5000/countries/${id}`)
-      .then(() => {
-        dispatch({ type: 'DELETE_CITY', payload: id });
-      })
-      .catch((error) => {
-        console.error('Error deleting country:', error);
-      });
+    deleteCountryMutation.mutate(id);
   };
 
   const handleEditClick = (
@@ -182,28 +167,13 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
       return;
     }
 
-    axios
-      .post('http://localhost:5000/countries', state.newCity)
-      .then((response) => {
-        dispatch({ type: 'ADD_CITY', payload: response.data });
-      })
-      .catch((error) => {
-        console.error('Error adding country:', error);
-      });
+    addCountryMutation.mutate(state.newCity);
   };
 
   const handleEditFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (editingCity) {
-      axios
-        .put(`http://localhost:5000/countries/${editingCity.id}`, editingCity)
-        .then((response) => {
-          dispatch({ type: 'UPDATE_CITY', payload: response.data });
-          setEditingCity(null);
-        })
-        .catch((error) => {
-          console.error('Error updating country:', error);
-        });
+      updateCountryMutation.mutate(editingCity);
     }
   };
 

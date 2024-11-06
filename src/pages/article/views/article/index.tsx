@@ -1,23 +1,13 @@
-import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import styles from './ArticlePage.module.css';
-import { useEffect, useState } from 'react';
-import { IData } from '../../../home/components/Card/cardReducer';
+import { useFetchCountry } from '../../../../api/countriesApi';
 
 const ArticlePage: React.FC = () => {
   const { id, lang } = useParams<{ id: string; lang: string }>();
-  const [article, setArticle] = useState<IData | null>(null);
+  const { data: article, isLoading, error } = useFetchCountry(id!);
 
-  useEffect(() => {
-    axios
-      .get(`http://localhost:5000/countries/${id}`)
-      .then((response) => {
-        setArticle(response.data);
-      })
-      .catch((error) => {
-        console.error('Error fetching country:', error);
-      });
-  }, [id]);
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error loading country</div>;
 
   if (!article) {
     return <div className={styles['article-container']}>Article not found</div>;

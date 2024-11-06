@@ -9,7 +9,7 @@ import {
   initialState,
   reducer,
 } from './pages/home/components/Card/cardReducer';
-import axios from 'axios';
+import { useFetchCountries } from './api/countriesApi';
 
 const CardPage = lazy(() => import('./pages/home/views/list'));
 const About = lazy(() => import('./pages/about/views/list'));
@@ -18,20 +18,16 @@ const Contact = lazy(() => import('./pages/contact/views/list'));
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const { data: countries, isLoading, error } = useFetchCountries();
+
   useEffect(() => {
-    axios
-      .get('http://localhost:5000/countries')
-      .then((response) => {
-        if (Array.isArray(response.data)) {
-          dispatch({ type: 'SET_DATA', payload: response.data });
-        } else {
-          console.error('Fetched data is not an array:', response.data);
-        }
-      })
-      .catch((error) => {
-        console.error('Error fetching countries:', error);
-      });
-  }, []);
+    if (countries) {
+      dispatch({ type: 'SET_DATA', payload: countries });
+    }
+  }, [countries]);
+
+  if (isLoading) return <Loading />;
+  if (error) return <div>Error loading countries</div>;
 
   return (
     <>
