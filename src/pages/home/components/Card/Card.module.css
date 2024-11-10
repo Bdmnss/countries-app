@@ -8,6 +8,12 @@
   flex-wrap: wrap;
 }
 
+.virtual-list {
+  width: 100%;
+  height: 1000px;
+  overflow: auto;
+}
+
 .card-styles {
   width: 90%;
   cursor: pointer;

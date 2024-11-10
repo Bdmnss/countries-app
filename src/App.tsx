@@ -18,11 +18,12 @@ const Contact = lazy(() => import('./pages/contact/views/list'));
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const { data: countries, isLoading, error } = useFetchCountries('asc');
+  const { data: countries, isLoading, error } = useFetchCountries('asc', 10);
 
   useEffect(() => {
     if (countries) {
-      dispatch({ type: 'SET_DATA', payload: countries });
+      const allCountries = countries.pages.flat();
+      dispatch({ type: 'SET_DATA', payload: allCountries });
     }
   }, [countries]);
 

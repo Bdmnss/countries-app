@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import CardContent from '../card-content/CardContent';
@@ -14,6 +14,7 @@ import {
   useAddCountry,
   useUpdateCountry,
   useDeleteCountry,
+  useLikeCountry,
 } from '../../../../api/countriesApi';
 
 interface CardProps {
@@ -61,17 +62,28 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
   const { lang } = useParams<{ lang: string }>();
   const [searchParams, setSearchParams] = useSearchParams();
   const sortOrder = searchParams.get('_sort') || 'likes';
+  const limit = 10;
 
-  const { data: countries, isLoading, error } = useFetchCountries(sortOrder);
+  const {
+    data,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+    isLoading,
+    error,
+  } = useFetchCountries(sortOrder, limit);
+
   const addCountryMutation = useAddCountry();
   const updateCountryMutation = useUpdateCountry();
   const deleteCountryMutation = useDeleteCountry();
+  const likeCountryMutation = useLikeCountry();
 
   useEffect(() => {
-    if (countries) {
-      dispatch({ type: 'SET_DATA', payload: countries });
+    if (data) {
+      const allCountries = data.pages.flat();
+      dispatch({ type: 'SET_DATA', payload: allCountries });
     }
-  }, [countries, dispatch]);
+  }, [data, dispatch]);
 
   const handleCardClick = (id: string) => {
     const city = state.data.find((item) => item.id === id);
@@ -82,7 +94,11 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
 
   const handleLike = (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
     e.stopPropagation();
-    dispatch({ type: 'LIKE_CITY', payload: id });
+    likeCountryMutation.mutate(id, {
+      onSuccess: () => {
+        dispatch({ type: 'LIKE_CITY', payload: id });
+      },
+    });
   };
 
   const handleDelete = (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
@@ -201,8 +217,34 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
   const rowVirtualizer = useVirtualizer({
     count: state.data.length,
     getScrollElement: () => parentRef.current,
-    estimateSize: () => 100,
+    estimateSize: () => 300,
   });
+
+  const loadMoreRef = useRef<HTMLDivElement>(null);
+
+  const handleObserver = useCallback(
+    (entries: IntersectionObserverEntry[]) => {
+      const target = entries[0];
+      if (target.isIntersecting && hasNextPage && !isFetchingNextPage) {
+        fetchNextPage();
+      }
+    },
+    [fetchNextPage, hasNextPage, isFetchingNextPage]
+  );
+
+  useEffect(() => {
+    const option = {
+      root: null,
+      rootMargin: '20px',
+      threshold: 1.0,
+    };
+    const observer = new IntersectionObserver(handleObserver, option);
+    const currentLoadMoreRef = loadMoreRef.current;
+    if (currentLoadMoreRef) observer.observe(currentLoadMoreRef);
+    return () => {
+      if (currentLoadMoreRef) observer.unobserve(currentLoadMoreRef);
+    };
+  }, [handleObserver]);
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading countries</div>;
@@ -269,6 +311,7 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
                   top: 0,
                   left: 0,
                   width: '100%',
+                  height: '30rem',
                   transform: `translateY(${virtualRow.start}px)`,
                 }}
                 onClick={() => handleCardClick(item.id)}
@@ -311,6 +354,9 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
             );
           })}
         </div>
+      </div>
+      <div ref={loadMoreRef} className={styles['load-more']}>
+        {isFetchingNextPage && <div>Loading more...</div>}
       </div>
     </div>
   );
