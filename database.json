@@ -169,6 +169,23 @@
           "about": "Africa"
         }
       }
+    },
+    {
+      "id": "0.3878480761355607",
+      "name": "Gurjaani",
+      "duration": "1 Week",
+      "price": 500,
+      "about": "afasfasfasfasfasf",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "",
+          "duration": "",
+          "about": ""
+        }
+      }
     }
   ]
 }

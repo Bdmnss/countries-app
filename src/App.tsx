@@ -18,7 +18,7 @@ const Contact = lazy(() => import('./pages/contact/views/list'));
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const { data: countries, isLoading, error } = useFetchCountries();
+  const { data: countries, isLoading, error } = useFetchCountries('asc');
 
   useEffect(() => {
     if (countries) {

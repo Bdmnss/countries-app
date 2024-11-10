@@ -8,8 +8,8 @@ const axiosInstance = axios.create({
   baseURL,
 });
 
-export const fetchCountries = async (): Promise<IData[]> => {
-  const response = await axiosInstance.get('/countries');
+export const fetchCountries = async (sortOrder: string): Promise<IData[]> => {
+  const response = await axiosInstance.get(`/countries?_sort=${sortOrder}`);
   return response.data;
 };
 
@@ -24,7 +24,10 @@ export const addCountry = async (newCountry: IData): Promise<IData> => {
 };
 
 export const updateCountry = async (updatedCountry: IData): Promise<IData> => {
-  const response = await axiosInstance.put(`/countries/${updatedCountry.id}`, updatedCountry);
+  const response = await axiosInstance.put(
+    `/countries/${updatedCountry.id}`,
+    updatedCountry
+  );
   return response.data;
 };
 
@@ -33,12 +36,18 @@ export const deleteCountry = async (id: string): Promise<void> => {
 };
 
 // Custom hooks
-export const useFetchCountries = () => {
-  return useQuery<IData[], Error>({ queryKey: ['countries'], queryFn: fetchCountries });
+export const useFetchCountries = (sortOrder: string) => {
+  return useQuery<IData[], Error>({
+    queryKey: ['countries', sortOrder],
+    queryFn: () => fetchCountries(sortOrder),
+  });
 };
 
 export const useFetchCountry = (id: string) => {
-  return useQuery<IData, Error>({ queryKey: ['country', id], queryFn: () => fetchCountry(id) });
+  return useQuery<IData, Error>({
+    queryKey: ['country', id],
+    queryFn: () => fetchCountry(id),
+  });
 };
 
 export const useAddCountry = () => {

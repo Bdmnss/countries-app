@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import { useVirtualizer } from '@tanstack/react-virtual';
 import CardContent from '../card-content/CardContent';
 import CardFooter from '../card-footer/CardFooter';
 import CardHeader from '../card-header/CardHeader';
@@ -9,6 +10,7 @@ import CardForm from '../card-form/CardForm';
 import OTPInput from '../OTP/OTPInput';
 import EditForm from '../editForm.tsx/EditForm';
 import {
+  useFetchCountries,
   useAddCountry,
   useUpdateCountry,
   useDeleteCountry,
@@ -57,10 +59,19 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
 
   const navigate = useNavigate();
   const { lang } = useParams<{ lang: string }>();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const sortOrder = searchParams.get('_sort') || 'likes';
 
+  const { data: countries, isLoading, error } = useFetchCountries(sortOrder);
   const addCountryMutation = useAddCountry();
   const updateCountryMutation = useUpdateCountry();
   const deleteCountryMutation = useDeleteCountry();
+
+  useEffect(() => {
+    if (countries) {
+      dispatch({ type: 'SET_DATA', payload: countries });
+    }
+  }, [countries, dispatch]);
 
   const handleCardClick = (id: string) => {
     const city = state.data.find((item) => item.id === id);
@@ -91,8 +102,8 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
   };
 
   const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const order = event.target.value as 'asc' | 'desc';
-    dispatch({ type: 'SET_SORT_ORDER', payload: order });
+    const order = event.target.value;
+    setSearchParams({ _sort: order });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -185,18 +196,16 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
     setOtp(newOtp);
   };
 
-  const sortedData = Array.isArray(state.data)
-    ? [...state.data]
-        .filter((item) => !item.deleted)
-        .sort((a, b) => {
-          if (state.sortOrder === 'asc') {
-            return a.likes - b.likes;
-          } else {
-            return b.likes - a.likes;
-          }
-        })
-        .concat(state.data.filter((item) => item.deleted))
-    : [];
+  const parentRef = React.useRef<HTMLDivElement>(null);
+
+  const rowVirtualizer = useVirtualizer({
+    count: state.data.length,
+    getScrollElement: () => parentRef.current,
+    estimateSize: () => 100,
+  });
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error loading countries</div>;
 
   return (
     <div className={styles['card-container']}>
@@ -224,63 +233,85 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
         />
       )}
       <select
-        value={state.sortOrder}
+        value={sortOrder}
         onChange={handleSortChange}
         className={styles['sort-select']}
       >
-        <option value="asc">
+        <option value="likes">
           {lang === 'ka'
             ? translateToGeorgian('Sort by Likes (Ascending)')
             : 'Sort by Likes (Ascending)'}
         </option>
-        <option value="desc">
+        <option value="-likes">
           {lang === 'ka'
             ? translateToGeorgian('Sort by Likes (Descending)')
             : 'Sort by Likes (Descending)'}
         </option>
       </select>
-      {sortedData.map((item, index) => (
+      <div ref={parentRef} className={styles['virtual-list']}>
         <div
-          key={index}
-          className={`${styles['card-styles']} ${
-            item.deleted ? styles['card-deleted'] : ''
-          }`}
-          onClick={() => handleCardClick(item.id)}
+          style={{
+            height: `${rowVirtualizer.getTotalSize()}px`,
+            width: '100%',
+            position: 'relative',
+          }}
         >
-          <CardHeader>
-            <header className={styles['card-header']}>
-              <p>{lang === 'ka' ? translateToGeorgian('New') : 'New'}</p>
-              <p>
-                {lang === 'ka' ? translateToGeorgian('Likes') : 'Likes'}:{' '}
-                {item.likes}
-              </p>
-              <button onClick={(e) => handleLike(e, item.id)}>
-                {lang === 'ka' ? translateToGeorgian('Like') : 'Like'}
-              </button>
-            </header>
-          </CardHeader>
-          <CardContent data={item} />
-          <CardFooter>
-            <footer className={styles['card-footer']}>
-              <div className={styles['card-footer-content']}>
-                <p>{lang === 'ka' ? translateToGeorgian('View') : 'View'}</p>
+          {rowVirtualizer.getVirtualItems().map((virtualRow) => {
+            const item = state.data[virtualRow.index];
+            return (
+              <div
+                key={virtualRow.key}
+                className={`${styles['card-styles']} ${
+                  item.deleted ? styles['card-deleted'] : ''
+                }`}
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  transform: `translateY(${virtualRow.start}px)`,
+                }}
+                onClick={() => handleCardClick(item.id)}
+              >
+                <CardHeader>
+                  <header className={styles['card-header']}>
+                    <p>{lang === 'ka' ? translateToGeorgian('New') : 'New'}</p>
+                    <p>
+                      {lang === 'ka' ? translateToGeorgian('Likes') : 'Likes'}:{' '}
+                      {item.likes}
+                    </p>
+                    <button onClick={(e) => handleLike(e, item.id)}>
+                      {lang === 'ka' ? translateToGeorgian('Like') : 'Like'}
+                    </button>
+                  </header>
+                </CardHeader>
+                <CardContent data={item} />
+                <CardFooter>
+                  <footer className={styles['card-footer']}>
+                    <div className={styles['card-footer-content']}>
+                      <p>
+                        {lang === 'ka' ? translateToGeorgian('View') : 'View'}
+                      </p>
+                    </div>
+                    <button onClick={(e) => handleEditClick(e, item.id)}>
+                      {lang === 'ka' ? translateToGeorgian('Edit') : 'Edit'}
+                    </button>
+                    <button onClick={(e) => handleDelete(e, item.id)}>
+                      {lang === 'ka'
+                        ? item.deleted
+                          ? translateToGeorgian('Recover')
+                          : translateToGeorgian('Delete')
+                        : item.deleted
+                          ? 'Recover'
+                          : 'Delete'}
+                    </button>
+                  </footer>
+                </CardFooter>
               </div>
-              <button onClick={(e) => handleEditClick(e, item.id)}>
-                {lang === 'ka' ? translateToGeorgian('Edit') : 'Edit'}
-              </button>
-              <button onClick={(e) => handleDelete(e, item.id)}>
-                {lang === 'ka'
-                  ? item.deleted
-                    ? translateToGeorgian('Recover')
-                    : translateToGeorgian('Delete')
-                  : item.deleted
-                    ? 'Recover'
-                    : 'Delete'}
-              </button>
-            </footer>
-          </CardFooter>
+            );
+          })}
         </div>
-      ))}
+      </div>
     </div>
   );
 };
