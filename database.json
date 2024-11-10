@@ -1,12 +1,12 @@
 {
   "countries": [
     {
-      "id": "866130db-788f-4475-a534-ad5cd89ccfc3",
+      "id": "6b77c799-354c-488b-a70b-f218acdd40c6",
       "name": "South Georgia",
       "duration": "1 Week",
-      "price": 3327,
+      "price": 2712,
       "about": "Antarctic",
-      "likes": 11,
+      "likes": 4,
       "deleted": false,
       "image": "",
       "translations": {
@@ -18,10 +18,10 @@
       }
     },
     {
-      "id": "a3c3df2a-f227-40ad-8825-2b1c286dc7c0",
+      "id": "9a2eae03-7449-4279-9f31-ab94895c70a2",
       "name": "Grenada",
       "duration": "1 Week",
-      "price": 8659,
+      "price": 1733,
       "about": "Americas",
       "likes": 0,
       "deleted": false,
@@ -35,10 +35,10 @@
       }
     },
     {
-      "id": "33ea5796-d6ac-4273-b218-cca1a8f9141f",
+      "id": "2fd1de47-f52b-4ec3-a9f6-30ca231395e1",
       "name": "Switzerland",
       "duration": "1 Week",
-      "price": 9435,
+      "price": 5436,
       "about": "Europe",
       "likes": 0,
       "deleted": false,
@@ -52,10 +52,10 @@
       }
     },
     {
-      "id": "bcb81d52-acb7-4994-be8f-3fc816a26560",
+      "id": "4f0a8c23-2e9d-4880-8302-f2281b8d35c4",
       "name": "Sierra Leone",
       "duration": "1 Week",
-      "price": 9956,
+      "price": 8035,
       "about": "Africa",
       "likes": 0,
       "deleted": false,
@@ -69,10 +69,10 @@
       }
     },
     {
-      "id": "10782792-a5cb-47d5-ab5d-c7de4ac90003",
+      "id": "52c86225-3ebf-46f4-8927-4bce77cbca79",
       "name": "Hungary",
       "duration": "1 Week",
-      "price": 8412,
+      "price": 5567,
       "about": "Europe",
       "likes": 0,
       "deleted": false,
@@ -86,10 +86,10 @@
       }
     },
     {
-      "id": "b0e88e3e-3ba2-4cf2-99f3-2c8ca783cd96",
+      "id": "e4483ae2-3fab-4bf7-bd03-e8a1c56c2e3f",
       "name": "Taiwan",
       "duration": "1 Week",
-      "price": 1445,
+      "price": 1392,
       "about": "Asia",
       "likes": 0,
       "deleted": false,
@@ -103,10 +103,10 @@
       }
     },
     {
-      "id": "26deb58b-6180-45ef-9388-e7a1d65a44ae",
+      "id": "ee5489ec-a422-4dd5-a745-f5f0be3f5f36",
       "name": "Wallis and Futuna",
       "duration": "1 Week",
-      "price": 2075,
+      "price": 9091,
       "about": "Oceania",
       "likes": 0,
       "deleted": false,
@@ -120,10 +120,10 @@
       }
     },
     {
-      "id": "819fbd7f-3b3e-48da-a777-e46a7f400c16",
+      "id": "332b2ab9-735d-429c-af7a-db88e8ee3e01",
       "name": "Barbados",
       "duration": "1 Week",
-      "price": 871,
+      "price": 3201,
       "about": "Americas",
       "likes": 0,
       "deleted": false,
@@ -137,10 +137,10 @@
       }
     },
     {
-      "id": "c9d232ce-dad7-43d1-906a-27d2bead8491",
+      "id": "a853897f-8d81-41d1-9d1e-aba0f788c031",
       "name": "Pitcairn Islands",
       "duration": "1 Week",
-      "price": 4141,
+      "price": 7133,
       "about": "Oceania",
       "likes": 0,
       "deleted": false,
@@ -154,10 +154,10 @@
       }
     },
     {
-      "id": "deec9190-86fb-41a6-8ab2-60246a59cb4a",
+      "id": "8d1decc4-4c67-4c38-a475-1681f30acfc8",
       "name": "Ivory Coast",
       "duration": "1 Week",
-      "price": 6850,
+      "price": 9167,
       "about": "Africa",
       "likes": 0,
       "deleted": false,
@@ -171,19 +171,4082 @@
       }
     },
     {
-      "id": "0.3878480761355607",
-      "name": "Gurjaani",
+      "id": "45e40003-470c-4f8d-8d46-e01fd0633208",
+      "name": "Tunisia",
       "duration": "1 Week",
-      "price": 500,
-      "about": "afasfasfasfasfasf",
+      "price": 1185,
+      "about": "Africa",
       "likes": 0,
       "deleted": false,
       "image": "",
       "translations": {
         "ka": {
-          "name": "",
-          "duration": "",
-          "about": ""
+          "name": "Tunisia",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "f4ed5983-05a0-4565-a2fb-4169415fb6eb",
+      "name": "Italy",
+      "duration": "1 Week",
+      "price": 9405,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Italy",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "85aa2a30-35eb-46d9-914a-19e63d7876bb",
+      "name": "Benin",
+      "duration": "1 Week",
+      "price": 7669,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Benin",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "377e44c2-a8b6-4e72-b06f-20c672e2d960",
+      "name": "Indonesia",
+      "duration": "1 Week",
+      "price": 8773,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Indonesia",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "d52f4c57-a496-489b-8b71-1371b87ab77d",
+      "name": "Cape Verde",
+      "duration": "1 Week",
+      "price": 1562,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Cape Verde",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "77b64103-a5d1-4d1d-b4d7-d006c6ce0c9a",
+      "name": "Saint Kitts and Nevis",
+      "duration": "1 Week",
+      "price": 599,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Saint Kitts and Nevis",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "2a2cb56f-8d95-4686-8efb-f22f884684b7",
+      "name": "Laos",
+      "duration": "1 Week",
+      "price": 5203,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Laos",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "ee115b6c-7840-4a57-b738-7b49915c8f26",
+      "name": "Caribbean Netherlands",
+      "duration": "1 Week",
+      "price": 6126,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Caribbean Netherlands",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "455c6254-b912-4deb-b01e-62ca88fe65a3",
+      "name": "Uganda",
+      "duration": "1 Week",
+      "price": 9270,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Uganda",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "06178d5e-92f6-430b-9639-f53d2edd48a5",
+      "name": "Andorra",
+      "duration": "1 Week",
+      "price": 2971,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Andorra",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "5694b49a-03b4-4166-b1ec-83866304d313",
+      "name": "Burundi",
+      "duration": "1 Week",
+      "price": 139,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Burundi",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "aba70550-639f-46c5-becf-8c8ed4aa5eda",
+      "name": "South Africa",
+      "duration": "1 Week",
+      "price": 1794,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "South Africa",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "35ad13f4-4e2e-414c-a2e5-2c74c64a6ca2",
+      "name": "France",
+      "duration": "1 Week",
+      "price": 4369,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "France",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "acf02f5f-4cd2-4a53-931f-7df42a9bbc37",
+      "name": "Libya",
+      "duration": "1 Week",
+      "price": 5640,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Libya",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "f164bb43-ee9f-44a4-9243-296f7efb779e",
+      "name": "Mexico",
+      "duration": "1 Week",
+      "price": 4289,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Mexico",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "6b4cd239-e223-4325-b949-b155bae6127d",
+      "name": "Gabon",
+      "duration": "1 Week",
+      "price": 4824,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Gabon",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "b7d5b0fd-4dfc-4c6f-9ed7-a6fe585a47b4",
+      "name": "Northern Mariana Islands",
+      "duration": "1 Week",
+      "price": 1981,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Northern Mariana Islands",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "baabbbf3-b980-44e2-83c5-30453f8ee949",
+      "name": "North Macedonia",
+      "duration": "1 Week",
+      "price": 4174,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "North Macedonia",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "db6c66bc-ccb3-4a26-b8de-0510552e62e6",
+      "name": "China",
+      "duration": "1 Week",
+      "price": 717,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "China",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "4af9f241-3b74-42a2-8c82-ec2e70118b66",
+      "name": "Yemen",
+      "duration": "1 Week",
+      "price": 3610,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Yemen",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "91209f3b-3586-4c67-935d-b0fef88ded14",
+      "name": "Saint Barthélemy",
+      "duration": "1 Week",
+      "price": 519,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Saint Barthélemy",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "775a8d5d-cd94-4f98-8f56-221bbf2c5c48",
+      "name": "Guernsey",
+      "duration": "1 Week",
+      "price": 3990,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Guernsey",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "4b5115c8-05c2-4d6c-85f9-9fa9e84e7e4c",
+      "name": "Solomon Islands",
+      "duration": "1 Week",
+      "price": 7702,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Solomon Islands",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "e02194a7-d967-46fe-8045-364f56bd0b1b",
+      "name": "Svalbard and Jan Mayen",
+      "duration": "1 Week",
+      "price": 6646,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Svalbard and Jan Mayen",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "00252b86-7d00-4e3f-97d9-a05e20081c1c",
+      "name": "Faroe Islands",
+      "duration": "1 Week",
+      "price": 5274,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Faroe Islands",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "42414699-046b-4d5e-9eaf-a831dc8b29fb",
+      "name": "Uzbekistan",
+      "duration": "1 Week",
+      "price": 4629,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Uzbekistan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "1e329951-49d8-40eb-9cb4-e7fd512f70d2",
+      "name": "Egypt",
+      "duration": "1 Week",
+      "price": 8032,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Egypt",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "3230cd57-8ed4-4f28-a4ba-2e5d3b2838e3",
+      "name": "Senegal",
+      "duration": "1 Week",
+      "price": 8112,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Senegal",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "6738d2d9-ab04-48cf-9118-18deaf158bd8",
+      "name": "Sri Lanka",
+      "duration": "1 Week",
+      "price": 2853,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Sri Lanka",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "35113610-20d9-4008-adad-44d5772630f3",
+      "name": "Palestine",
+      "duration": "1 Week",
+      "price": 9138,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Palestine",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "443c50c3-1f97-42c5-86a3-2574ee997984",
+      "name": "Bangladesh",
+      "duration": "1 Week",
+      "price": 5090,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Bangladesh",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "19e4a2fb-300e-450d-a681-55c3fe62fd09",
+      "name": "Peru",
+      "duration": "1 Week",
+      "price": 5022,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Peru",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "03e483fa-3484-4efd-9f4f-d074406dc13b",
+      "name": "Singapore",
+      "duration": "1 Week",
+      "price": 6116,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Singapore",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "69e6a9ed-c36e-470f-86ee-da204f36316d",
+      "name": "Turkey",
+      "duration": "1 Week",
+      "price": 1626,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Turkey",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "b7414a8b-a082-4290-bfe8-a4edfe993d64",
+      "name": "Afghanistan",
+      "duration": "1 Week",
+      "price": 863,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Afghanistan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "2dd2bbf1-7ed3-49ed-896d-3262c466e604",
+      "name": "Aruba",
+      "duration": "1 Week",
+      "price": 1277,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Aruba",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "adbcbc49-d8d1-4332-8d31-0736039d8db0",
+      "name": "Cook Islands",
+      "duration": "1 Week",
+      "price": 4567,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Cook Islands",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "7e7d45eb-6df2-4801-b8bb-9f3fbe80c7b8",
+      "name": "United Kingdom",
+      "duration": "1 Week",
+      "price": 6066,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "United Kingdom",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "86bb1c36-cd75-4ab9-9c09-6b7ecff103e1",
+      "name": "Zambia",
+      "duration": "1 Week",
+      "price": 6645,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Zambia",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "39145d11-e532-40ed-b70e-34c9cec62bcf",
+      "name": "Finland",
+      "duration": "1 Week",
+      "price": 502,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Finland",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "1b3cb81b-8f7c-490b-956e-3a574742730f",
+      "name": "Niger",
+      "duration": "1 Week",
+      "price": 6025,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Niger",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "e7015660-1a3a-4859-837f-5c7912f30696",
+      "name": "Christmas Island",
+      "duration": "1 Week",
+      "price": 2134,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Christmas Island",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "a4c337e8-f436-42c8-96a1-cd44099f10d6",
+      "name": "Tokelau",
+      "duration": "1 Week",
+      "price": 9705,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Tokelau",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "7c24b641-1dbc-47b9-9ac4-ecbe1c2bd19d",
+      "name": "Guinea-Bissau",
+      "duration": "1 Week",
+      "price": 2404,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Guinea-Bissau",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "b7ef8b99-6e0f-4342-b7a1-5763198b1a8c",
+      "name": "Azerbaijan",
+      "duration": "1 Week",
+      "price": 6844,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Azerbaijan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "60fe0421-93f2-4ca1-9076-789bbab40a96",
+      "name": "Réunion",
+      "duration": "1 Week",
+      "price": 7203,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Réunion",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "7149dce7-3a49-4837-a5b3-88b85fdd1d2f",
+      "name": "Djibouti",
+      "duration": "1 Week",
+      "price": 9112,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Djibouti",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "6dff4c45-18f6-4381-904f-9f9a57f56ff7",
+      "name": "North Korea",
+      "duration": "1 Week",
+      "price": 7505,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "North Korea",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "3d89ce19-6ff5-4eca-82b4-a5088462b70e",
+      "name": "Mauritius",
+      "duration": "1 Week",
+      "price": 1491,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Mauritius",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "a872f17c-9f82-4f83-b573-259d5ce00b24",
+      "name": "Montserrat",
+      "duration": "1 Week",
+      "price": 1442,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Montserrat",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "de89d550-a63b-4622-b3c1-bd0d9146c9c3",
+      "name": "United States Virgin Islands",
+      "duration": "1 Week",
+      "price": 7312,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "United States Virgin Islands",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "a4843a73-282d-437c-b943-66701cc23899",
+      "name": "Colombia",
+      "duration": "1 Week",
+      "price": 7125,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Colombia",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "5aa8f8f3-187d-4e5c-85ea-f4c59e196056",
+      "name": "Greece",
+      "duration": "1 Week",
+      "price": 9012,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Greece",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "71a76ed9-be40-43ec-84c7-6e21cdf78c41",
+      "name": "Croatia",
+      "duration": "1 Week",
+      "price": 4542,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Croatia",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "abafc2d4-25b2-4660-affd-3986c2592415",
+      "name": "Morocco",
+      "duration": "1 Week",
+      "price": 4709,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Morocco",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "b53f0b44-24e5-427c-8251-6653c219fc33",
+      "name": "Algeria",
+      "duration": "1 Week",
+      "price": 2174,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Algeria",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "f19b5c4d-ba0a-4488-9b65-45eae9b50ea1",
+      "name": "Antarctica",
+      "duration": "1 Week",
+      "price": 4373,
+      "about": "Antarctic",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Antarctica",
+          "duration": "1 კვირა",
+          "about": "Antarctic"
+        }
+      }
+    },
+    {
+      "id": "00830e81-c6b3-4825-81aa-000e7f02bae0",
+      "name": "Netherlands",
+      "duration": "1 Week",
+      "price": 2110,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Netherlands",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "ff1e3f86-5744-4901-bb59-f256ae07afa2",
+      "name": "Sudan",
+      "duration": "1 Week",
+      "price": 7040,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Sudan",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "2fce482f-e350-4d72-a96d-0b5ced555bed",
+      "name": "Fiji",
+      "duration": "1 Week",
+      "price": 5947,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Fiji",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "2646b14a-ba77-4aaa-9bdb-1f2e66e9669f",
+      "name": "Liechtenstein",
+      "duration": "1 Week",
+      "price": 1513,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Liechtenstein",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "ef2c75dd-2a03-4580-adf2-385d8a3e3502",
+      "name": "Nepal",
+      "duration": "1 Week",
+      "price": 1409,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Nepal",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "566e536a-11e8-4873-913e-52746ef82592",
+      "name": "Puerto Rico",
+      "duration": "1 Week",
+      "price": 8616,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Puerto Rico",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "90161266-327f-433a-9a40-45cc8399c294",
+      "name": "Georgia",
+      "duration": "1 Week",
+      "price": 4111,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Georgia",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "23d1b8d2-5769-4112-b44b-2220f43ba4e0",
+      "name": "Pakistan",
+      "duration": "1 Week",
+      "price": 8236,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Pakistan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "3d17bed6-dc86-426e-9001-d77bf7fa3aa5",
+      "name": "Monaco",
+      "duration": "1 Week",
+      "price": 3684,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Monaco",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "2eeecae8-aeec-4a16-b7f7-c1ddcd798cd3",
+      "name": "Botswana",
+      "duration": "1 Week",
+      "price": 6048,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Botswana",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "6546686b-bc21-4a15-81e2-347190a05788",
+      "name": "Lebanon",
+      "duration": "1 Week",
+      "price": 7291,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Lebanon",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "eed7baad-bff7-4521-bf36-d8ffcf2d5922",
+      "name": "Papua New Guinea",
+      "duration": "1 Week",
+      "price": 3465,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Papua New Guinea",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "3ef67cb8-fe93-4dab-916f-d73e8e3a0ecf",
+      "name": "Mayotte",
+      "duration": "1 Week",
+      "price": 8207,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Mayotte",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "1c8095c2-9f90-4db7-b7ab-21ed9d8dd772",
+      "name": "Dominican Republic",
+      "duration": "1 Week",
+      "price": 2257,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Dominican Republic",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "963160fa-5c32-43a1-8777-b935c3638070",
+      "name": "Norfolk Island",
+      "duration": "1 Week",
+      "price": 4058,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Norfolk Island",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "15dd24d5-0eb9-43fa-8f6d-93ffa698470d",
+      "name": "Bouvet Island",
+      "duration": "1 Week",
+      "price": 6397,
+      "about": "Antarctic",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Bouvet Island",
+          "duration": "1 კვირა",
+          "about": "Antarctic"
+        }
+      }
+    },
+    {
+      "id": "091977db-c381-4d50-ac8e-7053fb824615",
+      "name": "Qatar",
+      "duration": "1 Week",
+      "price": 5029,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Qatar",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "29692165-51c2-41b4-8f64-88739f39c01d",
+      "name": "Madagascar",
+      "duration": "1 Week",
+      "price": 7835,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Madagascar",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "a695a9d4-9113-4716-b18f-a1fa8627b527",
+      "name": "India",
+      "duration": "1 Week",
+      "price": 8581,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "India",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "0dcab683-d81b-4104-803f-7254e0d8d2e3",
+      "name": "Syria",
+      "duration": "1 Week",
+      "price": 1740,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Syria",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "7043a344-c784-4f0d-a4f9-6939a6b05b8a",
+      "name": "Montenegro",
+      "duration": "1 Week",
+      "price": 9636,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Montenegro",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "b3136893-e4a0-4d0d-8d9e-ba4b5c9954c9",
+      "name": "Eswatini",
+      "duration": "1 Week",
+      "price": 6323,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Eswatini",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "c6c8926a-4978-4fa7-9898-785c5cdba186",
+      "name": "Paraguay",
+      "duration": "1 Week",
+      "price": 6607,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Paraguay",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "c5efb6a7-ed84-4f68-b1e7-f58784380afe",
+      "name": "El Salvador",
+      "duration": "1 Week",
+      "price": 2009,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "El Salvador",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "7811f539-1bd5-4336-acc0-39cc18439b4e",
+      "name": "Ukraine",
+      "duration": "1 Week",
+      "price": 3872,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Ukraine",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "63dfd259-dae7-4faf-a88d-fd68348013c4",
+      "name": "Isle of Man",
+      "duration": "1 Week",
+      "price": 2290,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Isle of Man",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "ba7cc839-6406-4b3d-b894-8512e1d6d5b7",
+      "name": "Namibia",
+      "duration": "1 Week",
+      "price": 8281,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Namibia",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "162cdc6f-22d7-428b-8462-94bf77b716ce",
+      "name": "United Arab Emirates",
+      "duration": "1 Week",
+      "price": 9143,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "United Arab Emirates",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "9d3a2069-93bd-466f-9fe7-71bc1416ce17",
+      "name": "Bulgaria",
+      "duration": "1 Week",
+      "price": 485,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Bulgaria",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "c384ab9a-7406-4d9f-ad90-a80622081420",
+      "name": "Greenland",
+      "duration": "1 Week",
+      "price": 9481,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Greenland",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "09b6db5f-2039-4461-8eaf-e57bb7d9538c",
+      "name": "Germany",
+      "duration": "1 Week",
+      "price": 2456,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Germany",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "87af7963-74e8-4c8f-8658-82cd0a51b8e6",
+      "name": "Cambodia",
+      "duration": "1 Week",
+      "price": 6320,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Cambodia",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "0eadf4a5-3aeb-4583-acc7-a3610291970e",
+      "name": "Iraq",
+      "duration": "1 Week",
+      "price": 5585,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Iraq",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "11f7bfd8-fc00-492f-af64-717bedd81bfd",
+      "name": "French Southern and Antarctic Lands",
+      "duration": "1 Week",
+      "price": 1319,
+      "about": "Antarctic",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "French Southern and Antarctic Lands",
+          "duration": "1 კვირა",
+          "about": "Antarctic"
+        }
+      }
+    },
+    {
+      "id": "3fe39d0e-f693-4268-b633-b3af6d07bce9",
+      "name": "Sweden",
+      "duration": "1 Week",
+      "price": 3695,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Sweden",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "da206546-7d3d-4480-82fc-dd15ee19606d",
+      "name": "Cuba",
+      "duration": "1 Week",
+      "price": 2841,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Cuba",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "b87f2825-7b60-4e3b-9194-086be2eca7e0",
+      "name": "Kyrgyzstan",
+      "duration": "1 Week",
+      "price": 1498,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Kyrgyzstan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "8e2c6298-34c0-46aa-9f3e-d4999d56cb1f",
+      "name": "Russia",
+      "duration": "1 Week",
+      "price": 2993,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Russia",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "51497b2b-9178-4972-8312-d7f53651d425",
+      "name": "Malaysia",
+      "duration": "1 Week",
+      "price": 5932,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Malaysia",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "f756165c-b215-4c9f-be98-1ab7f8d6010d",
+      "name": "São Tomé and Príncipe",
+      "duration": "1 Week",
+      "price": 9581,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "São Tomé and Príncipe",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "40d59958-c1f2-4a24-acab-1ff1f066d789",
+      "name": "Cyprus",
+      "duration": "1 Week",
+      "price": 9017,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Cyprus",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "039b465c-ef4b-470e-8869-f068e5bbf697",
+      "name": "Canada",
+      "duration": "1 Week",
+      "price": 6359,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Canada",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "b05dd078-7873-466a-b699-973a5298d5f0",
+      "name": "Malawi",
+      "duration": "1 Week",
+      "price": 5489,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Malawi",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "4192f948-ba26-4175-b481-bf47e2ca09a1",
+      "name": "Saudi Arabia",
+      "duration": "1 Week",
+      "price": 570,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Saudi Arabia",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "5312f8ad-7886-4772-b130-60cd9dec4118",
+      "name": "Bosnia and Herzegovina",
+      "duration": "1 Week",
+      "price": 1732,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Bosnia and Herzegovina",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "274c0bc2-10e6-408a-938b-8f0d8e69a665",
+      "name": "Ethiopia",
+      "duration": "1 Week",
+      "price": 5289,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Ethiopia",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "8abcf164-c5d4-4b9b-b3bb-f341af6f5f07",
+      "name": "Spain",
+      "duration": "1 Week",
+      "price": 3884,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Spain",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "74fbb38d-c53b-4a84-9aad-0ba5bf8373fa",
+      "name": "Slovenia",
+      "duration": "1 Week",
+      "price": 4916,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Slovenia",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "58351b90-124f-4216-9eb3-ee06e9a261ad",
+      "name": "Oman",
+      "duration": "1 Week",
+      "price": 6514,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Oman",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "0e1a6314-86f9-4f68-a5b8-59e7037283e4",
+      "name": "Saint Pierre and Miquelon",
+      "duration": "1 Week",
+      "price": 429,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Saint Pierre and Miquelon",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "6382766e-df93-4d75-9c2c-89baf0a71b19",
+      "name": "Macau",
+      "duration": "1 Week",
+      "price": 4700,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Macau",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "3920b569-55f7-4fd6-a0cf-8602c40b9577",
+      "name": "San Marino",
+      "duration": "1 Week",
+      "price": 7853,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "San Marino",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "d5805e36-86a9-415b-bd62-2046312118d4",
+      "name": "Lesotho",
+      "duration": "1 Week",
+      "price": 6671,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Lesotho",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "cca396a1-2f3e-4873-a4a5-74f5cbabed34",
+      "name": "Marshall Islands",
+      "duration": "1 Week",
+      "price": 1604,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Marshall Islands",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "71ca19d8-ff7d-46b6-bbaf-3cd5be2d1b58",
+      "name": "Sint Maarten",
+      "duration": "1 Week",
+      "price": 4288,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Sint Maarten",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "2968a48c-6d7b-4f02-ac1b-6ac98717f03f",
+      "name": "Iceland",
+      "duration": "1 Week",
+      "price": 7591,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Iceland",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "47048ec9-0ee5-48ae-9d3c-dee3a98f6f00",
+      "name": "Luxembourg",
+      "duration": "1 Week",
+      "price": 467,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Luxembourg",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "918f94f9-8287-4d6c-9049-122bae21d520",
+      "name": "Argentina",
+      "duration": "1 Week",
+      "price": 5521,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Argentina",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "fb7a48c7-fbc6-4576-97e4-bee887b76333",
+      "name": "Turks and Caicos Islands",
+      "duration": "1 Week",
+      "price": 7269,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Turks and Caicos Islands",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "e610dc44-ab60-4ce9-88a7-4e58fa966b60",
+      "name": "Nauru",
+      "duration": "1 Week",
+      "price": 6196,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Nauru",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "d968335a-d19f-4304-8294-8a70f5131c19",
+      "name": "Cocos (Keeling) Islands",
+      "duration": "1 Week",
+      "price": 595,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Cocos (Keeling) Islands",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "927c13c8-809e-412a-b7d0-6c64d851a1cd",
+      "name": "Western Sahara",
+      "duration": "1 Week",
+      "price": 242,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Western Sahara",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "f9560a16-0e37-4f79-96ac-e231fcfd3365",
+      "name": "Dominica",
+      "duration": "1 Week",
+      "price": 8410,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Dominica",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "bbd98250-bba0-489b-b959-48d93503d448",
+      "name": "Costa Rica",
+      "duration": "1 Week",
+      "price": 941,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Costa Rica",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "30c24c2b-de13-47c8-bcd7-297b43440815",
+      "name": "Australia",
+      "duration": "1 Week",
+      "price": 2450,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Australia",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "4aeed11d-1bff-4dce-adfe-7b9a828ce5ec",
+      "name": "Thailand",
+      "duration": "1 Week",
+      "price": 3513,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Thailand",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "c30a64df-6df3-4efa-93af-33ef79488ba9",
+      "name": "Haiti",
+      "duration": "1 Week",
+      "price": 3714,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Haiti",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "d9fe2928-d7e2-4ead-a17a-0e909d94ca82",
+      "name": "Tuvalu",
+      "duration": "1 Week",
+      "price": 6637,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Tuvalu",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "c6dd7593-278f-42e6-8e7f-65a35624153a",
+      "name": "Honduras",
+      "duration": "1 Week",
+      "price": 8853,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Honduras",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "50401cd5-4f3b-45fb-8995-398f389facc4",
+      "name": "Equatorial Guinea",
+      "duration": "1 Week",
+      "price": 2218,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Equatorial Guinea",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "92158ffe-391a-4759-8ac1-a61fd8373f0d",
+      "name": "Saint Lucia",
+      "duration": "1 Week",
+      "price": 4980,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Saint Lucia",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "8a5761cb-3202-4fcb-bd5d-f6a99da9fe26",
+      "name": "French Polynesia",
+      "duration": "1 Week",
+      "price": 1252,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "French Polynesia",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "4444a946-80f6-4e98-b1de-4485e71eaa1d",
+      "name": "Belarus",
+      "duration": "1 Week",
+      "price": 5454,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Belarus",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "3bc1fa10-9e0a-4156-bba5-2f5561eeb774",
+      "name": "Latvia",
+      "duration": "1 Week",
+      "price": 332,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Latvia",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "dfa86c3a-6abe-47b9-ba5a-44713db0c65c",
+      "name": "Palau",
+      "duration": "1 Week",
+      "price": 5491,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Palau",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "5039e60e-6d2f-4c97-935b-b3c9214a92d6",
+      "name": "Guadeloupe",
+      "duration": "1 Week",
+      "price": 8117,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Guadeloupe",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "42df7a1b-edd5-48e2-a8ae-48f868c67697",
+      "name": "Philippines",
+      "duration": "1 Week",
+      "price": 1990,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Philippines",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "1ddc5271-a758-4afe-9f59-30d462e290a7",
+      "name": "Gibraltar",
+      "duration": "1 Week",
+      "price": 8483,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Gibraltar",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "f07cef83-524a-49cf-972b-b241563bfdf6",
+      "name": "Denmark",
+      "duration": "1 Week",
+      "price": 2823,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Denmark",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "df6c360d-6abc-4f0c-944e-fc2f1ba951a5",
+      "name": "Cameroon",
+      "duration": "1 Week",
+      "price": 1267,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Cameroon",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "f6282e1f-1024-4da0-83a8-78279b5966f2",
+      "name": "Guinea",
+      "duration": "1 Week",
+      "price": 7572,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Guinea",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "dcc3e075-23ad-4d71-a70f-62b5f3be0ccb",
+      "name": "Bahrain",
+      "duration": "1 Week",
+      "price": 2201,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Bahrain",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "6644f194-cd3d-4cf1-945f-386ecf5e828a",
+      "name": "Suriname",
+      "duration": "1 Week",
+      "price": 2388,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Suriname",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "3f830148-6aaa-433a-b2d2-ea7e7b41c290",
+      "name": "DR Congo",
+      "duration": "1 Week",
+      "price": 6578,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "DR Congo",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "91a8ecf1-3728-4346-bf1e-f344aeba1381",
+      "name": "Somalia",
+      "duration": "1 Week",
+      "price": 1536,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Somalia",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "27dc4868-4919-4c10-873e-d24436f0e86a",
+      "name": "Czechia",
+      "duration": "1 Week",
+      "price": 5287,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Czechia",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "b3b03a3c-a3e7-4b0e-b6c7-71fbb3eca93a",
+      "name": "New Caledonia",
+      "duration": "1 Week",
+      "price": 8052,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "New Caledonia",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "e946d557-b2fc-47ff-bda1-f03cc774af67",
+      "name": "Vanuatu",
+      "duration": "1 Week",
+      "price": 7172,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Vanuatu",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "c23025b7-36e5-4f3a-ab44-3d5b9baa7108",
+      "name": "Saint Helena, Ascension and Tristan da Cunha",
+      "duration": "1 Week",
+      "price": 2145,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Saint Helena, Ascension and Tristan da Cunha",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "8174488e-f57b-4128-b142-137e5f4ce12d",
+      "name": "Togo",
+      "duration": "1 Week",
+      "price": 9305,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Togo",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "01787363-a5a0-46e3-9272-16c7545b1054",
+      "name": "British Virgin Islands",
+      "duration": "1 Week",
+      "price": 4591,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "British Virgin Islands",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "e4338e39-82af-4a85-9bd7-237bac74da64",
+      "name": "Kenya",
+      "duration": "1 Week",
+      "price": 9689,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Kenya",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "80954246-a2ac-4563-b8e5-f3167a7a3a0f",
+      "name": "Niue",
+      "duration": "1 Week",
+      "price": 2099,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Niue",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "01e960bf-2422-4ae2-bdf7-cb3c0a9346ec",
+      "name": "Heard Island and McDonald Islands",
+      "duration": "1 Week",
+      "price": 8200,
+      "about": "Antarctic",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Heard Island and McDonald Islands",
+          "duration": "1 კვირა",
+          "about": "Antarctic"
+        }
+      }
+    },
+    {
+      "id": "9dab259c-2867-465b-b554-7ba3d9e97935",
+      "name": "Rwanda",
+      "duration": "1 Week",
+      "price": 152,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Rwanda",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "11cc62ea-7a7a-440d-9681-25a084faef60",
+      "name": "Estonia",
+      "duration": "1 Week",
+      "price": 4446,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Estonia",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "936bd7f9-4ef4-46b0-acf9-9bd86b80327e",
+      "name": "Romania",
+      "duration": "1 Week",
+      "price": 7377,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Romania",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "8086f548-0289-44a7-94d7-19393d83ce9c",
+      "name": "Trinidad and Tobago",
+      "duration": "1 Week",
+      "price": 9195,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Trinidad and Tobago",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "750db41a-e256-4d03-adec-e4cd6dc5ff4d",
+      "name": "Guyana",
+      "duration": "1 Week",
+      "price": 2038,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Guyana",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "ffc45d74-d763-4369-9ddb-17e51483f7ff",
+      "name": "Timor-Leste",
+      "duration": "1 Week",
+      "price": 3537,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Timor-Leste",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "4b8b9155-f33d-445c-95fd-794e79cb4523",
+      "name": "Vietnam",
+      "duration": "1 Week",
+      "price": 8048,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Vietnam",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "6f958d3d-6f4c-4cf4-88ab-371b44b28fe1",
+      "name": "Uruguay",
+      "duration": "1 Week",
+      "price": 6624,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Uruguay",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "5e5e46f3-9f59-44d1-8cdb-1088c8cf9eeb",
+      "name": "Vatican City",
+      "duration": "1 Week",
+      "price": 5750,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Vatican City",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "ebca24f5-69d3-4c20-a267-9f8d32705b27",
+      "name": "Hong Kong",
+      "duration": "1 Week",
+      "price": 4645,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Hong Kong",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "d1b3ac42-ad47-49fe-99f5-b4a7db2ec59d",
+      "name": "Austria",
+      "duration": "1 Week",
+      "price": 7056,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Austria",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "4ca95e68-0a85-4474-8448-b3d11468b8c2",
+      "name": "Antigua and Barbuda",
+      "duration": "1 Week",
+      "price": 5866,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Antigua and Barbuda",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "8c2114bf-064e-41d8-a06e-8d3f3659d559",
+      "name": "Turkmenistan",
+      "duration": "1 Week",
+      "price": 1482,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Turkmenistan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "88a736ac-4236-42d8-a0cd-03e3b7ebe2ca",
+      "name": "Mozambique",
+      "duration": "1 Week",
+      "price": 9564,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Mozambique",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "c0b2678c-e506-45ac-86e8-ddd80cf4730a",
+      "name": "Panama",
+      "duration": "1 Week",
+      "price": 3943,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Panama",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "105546cb-abd1-45ce-9ca6-160c4d45dc04",
+      "name": "Micronesia",
+      "duration": "1 Week",
+      "price": 5862,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Micronesia",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "d8e50e62-134d-46d1-8049-f764505340cf",
+      "name": "Ireland",
+      "duration": "1 Week",
+      "price": 9475,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Ireland",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "ac9ba08f-f0d8-48ce-9a70-98a8a6db8c94",
+      "name": "Curaçao",
+      "duration": "1 Week",
+      "price": 2057,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Curaçao",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "c61c264c-1997-4dd5-bf2e-b1b4c8c44b52",
+      "name": "French Guiana",
+      "duration": "1 Week",
+      "price": 8701,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "French Guiana",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "b411fcbe-35f4-4f7a-9358-6455111987b7",
+      "name": "Norway",
+      "duration": "1 Week",
+      "price": 7567,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Norway",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "a432f58c-50b9-4b36-a790-9f1fb2ee133a",
+      "name": "Åland Islands",
+      "duration": "1 Week",
+      "price": 9256,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Åland Islands",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "7fda24f9-c851-474c-b82d-40fc7f5da6d4",
+      "name": "Central African Republic",
+      "duration": "1 Week",
+      "price": 5341,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Central African Republic",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "613925b7-192e-4af8-9c5f-ebc37037c8d0",
+      "name": "Burkina Faso",
+      "duration": "1 Week",
+      "price": 7226,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Burkina Faso",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "59e3409e-5658-48a1-b7a1-fe9e742d6542",
+      "name": "Eritrea",
+      "duration": "1 Week",
+      "price": 2293,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Eritrea",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "ea571fd5-64a2-4142-b640-306df79b890b",
+      "name": "Tanzania",
+      "duration": "1 Week",
+      "price": 4207,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Tanzania",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "43a953d3-ebb8-48b9-9b17-b508be3bbfb4",
+      "name": "South Korea",
+      "duration": "1 Week",
+      "price": 866,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "South Korea",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "1caa6d15-753b-4c46-a145-2d43ef5913a4",
+      "name": "Jordan",
+      "duration": "1 Week",
+      "price": 4283,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Jordan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "168ee5ff-c309-490d-9f35-f1fe42955c69",
+      "name": "Mauritania",
+      "duration": "1 Week",
+      "price": 9713,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Mauritania",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "8ed1d74f-a4c3-41a0-86be-82a23827faa3",
+      "name": "Lithuania",
+      "duration": "1 Week",
+      "price": 5007,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Lithuania",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "ad139051-cfa6-469d-950a-46ab7b302c4f",
+      "name": "United States Minor Outlying Islands",
+      "duration": "1 Week",
+      "price": 1633,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "United States Minor Outlying Islands",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "87c198c7-4a0c-4e98-a0e3-3207533d405d",
+      "name": "Slovakia",
+      "duration": "1 Week",
+      "price": 1639,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Slovakia",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "bb6cccf2-e764-4cd7-b592-53e64f95c817",
+      "name": "Angola",
+      "duration": "1 Week",
+      "price": 2258,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Angola",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "5ff028dc-419e-4f21-81bc-5137c3dfe495",
+      "name": "Kazakhstan",
+      "duration": "1 Week",
+      "price": 1967,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Kazakhstan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "f173b744-5d56-4ffd-9052-566b0808b1e1",
+      "name": "Moldova",
+      "duration": "1 Week",
+      "price": 6174,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Moldova",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "906230e8-1146-4b93-996c-879ca0f08c80",
+      "name": "Mali",
+      "duration": "1 Week",
+      "price": 5819,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Mali",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "e5ea5a43-a3b2-412f-8b94-61cc6b62f1c6",
+      "name": "Falkland Islands",
+      "duration": "1 Week",
+      "price": 1808,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Falkland Islands",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "69ad9f1b-9746-4c16-8119-73719483b71e",
+      "name": "Armenia",
+      "duration": "1 Week",
+      "price": 4542,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Armenia",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "0426f881-df1c-450e-b8ae-05d3724f8daf",
+      "name": "Samoa",
+      "duration": "1 Week",
+      "price": 4976,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Samoa",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "bf3f5e8d-181b-4286-922b-cdd09c454e37",
+      "name": "Jersey",
+      "duration": "1 Week",
+      "price": 7232,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Jersey",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "c30b0bb8-c335-4b89-b4e4-312bdd3e6a04",
+      "name": "Japan",
+      "duration": "1 Week",
+      "price": 3765,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Japan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "cb3c3015-4bde-46e7-95ad-54a9e5b15434",
+      "name": "Bolivia",
+      "duration": "1 Week",
+      "price": 1902,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Bolivia",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "a4f6cbd0-a2f6-4876-ab41-685891bf10d2",
+      "name": "Chile",
+      "duration": "1 Week",
+      "price": 4537,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Chile",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "390ad27f-c4e6-4a8c-9bfe-1c9a34ff8d50",
+      "name": "United States",
+      "duration": "1 Week",
+      "price": 7996,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "United States",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "ae104818-f7e2-44ed-8a08-a4d7c90f710a",
+      "name": "Saint Vincent and the Grenadines",
+      "duration": "1 Week",
+      "price": 5490,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Saint Vincent and the Grenadines",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "ba439a6b-e314-4c84-881c-ed12c913cfd9",
+      "name": "Bermuda",
+      "duration": "1 Week",
+      "price": 1299,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Bermuda",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "d331c4fb-9064-49ec-96d6-d4287ef6ff7b",
+      "name": "Seychelles",
+      "duration": "1 Week",
+      "price": 3340,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Seychelles",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "6c34ff95-e174-4e9d-b18b-3bc4ba2cde6c",
+      "name": "British Indian Ocean Territory",
+      "duration": "1 Week",
+      "price": 8242,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "British Indian Ocean Territory",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "9a1ff043-bbde-415f-93d1-1a706c473595",
+      "name": "Guatemala",
+      "duration": "1 Week",
+      "price": 858,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Guatemala",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "2b3e1d4b-6a78-4ef6-9226-3724c31c6d6d",
+      "name": "Ecuador",
+      "duration": "1 Week",
+      "price": 3697,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Ecuador",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "a6820a33-6dd8-4af5-bfa1-5a99765542d2",
+      "name": "Martinique",
+      "duration": "1 Week",
+      "price": 3324,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Martinique",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "1ff48494-f732-4fbf-8b9e-bbdf8e831466",
+      "name": "Tajikistan",
+      "duration": "1 Week",
+      "price": 8035,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Tajikistan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "ba7c3c94-246a-4310-8042-f3164824c59b",
+      "name": "Malta",
+      "duration": "1 Week",
+      "price": 9925,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Malta",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "5d2d4a73-878c-491d-a36a-961bc241af8a",
+      "name": "Gambia",
+      "duration": "1 Week",
+      "price": 5944,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Gambia",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "e5589bf3-aa42-43a2-85ff-0887f13fba0b",
+      "name": "Nigeria",
+      "duration": "1 Week",
+      "price": 890,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Nigeria",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "df45d1e0-3aed-4548-9e60-e931f2b270d4",
+      "name": "Bahamas",
+      "duration": "1 Week",
+      "price": 4802,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Bahamas",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "565c2030-6e35-4adc-8d37-418b4ea70c74",
+      "name": "Kosovo",
+      "duration": "1 Week",
+      "price": 7280,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Kosovo",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "7e6c3b4d-7e87-4be9-91b8-7387d09c5863",
+      "name": "Kuwait",
+      "duration": "1 Week",
+      "price": 9307,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Kuwait",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "e507a147-5e91-42a1-8e38-c96937d38ca9",
+      "name": "Maldives",
+      "duration": "1 Week",
+      "price": 8660,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Maldives",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "2df27537-a175-4960-a6a4-d2abd331386c",
+      "name": "South Sudan",
+      "duration": "1 Week",
+      "price": 1723,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "South Sudan",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "99d886f2-1868-4974-91f2-69a09ad1d6f5",
+      "name": "Iran",
+      "duration": "1 Week",
+      "price": 5973,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Iran",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "cb754bcd-d610-4baa-8612-8f31aff63412",
+      "name": "Albania",
+      "duration": "1 Week",
+      "price": 9066,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Albania",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "fc7dce7f-83e9-4633-89f1-b64b17161d6e",
+      "name": "Brazil",
+      "duration": "1 Week",
+      "price": 5733,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Brazil",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "d9a457f6-8f81-4a32-ac33-0947297732c9",
+      "name": "Serbia",
+      "duration": "1 Week",
+      "price": 3684,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Serbia",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "538b871a-404e-4f1f-ac24-cea9532f00ac",
+      "name": "Belize",
+      "duration": "1 Week",
+      "price": 7548,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Belize",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "a9f3885c-a2b9-4482-84d8-c37503ea251e",
+      "name": "Myanmar",
+      "duration": "1 Week",
+      "price": 3642,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Myanmar",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "396e9ac6-9db2-41c3-ae97-5a10d4e18eef",
+      "name": "Bhutan",
+      "duration": "1 Week",
+      "price": 2464,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Bhutan",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "59091297-f737-49ea-8804-9bc65c6ff5da",
+      "name": "Venezuela",
+      "duration": "1 Week",
+      "price": 3317,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Venezuela",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "525916fa-adfd-47c1-a4e5-05466c3d16eb",
+      "name": "Liberia",
+      "duration": "1 Week",
+      "price": 9858,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Liberia",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "4d5d1a71-261c-4aac-83a0-7380591fdc66",
+      "name": "Jamaica",
+      "duration": "1 Week",
+      "price": 7435,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Jamaica",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "a76320d7-3446-4379-9e82-0d0218d5d5c9",
+      "name": "Poland",
+      "duration": "1 Week",
+      "price": 3423,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Poland",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "1dbf6c09-494a-4c08-9e8c-4057d5ab84e2",
+      "name": "Cayman Islands",
+      "duration": "1 Week",
+      "price": 3715,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Cayman Islands",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "8a12b9bc-3428-49b3-a613-178da0cd6e5a",
+      "name": "Brunei",
+      "duration": "1 Week",
+      "price": 2192,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Brunei",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "8ab86925-5e1f-4229-856b-d6544803bfd3",
+      "name": "Comoros",
+      "duration": "1 Week",
+      "price": 4771,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Comoros",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "5ded2799-e5c1-4178-a8f6-79a5d6873505",
+      "name": "Guam",
+      "duration": "1 Week",
+      "price": 2939,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Guam",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "9d23b3c2-e72a-4fd5-9e53-11b3c040fe4c",
+      "name": "Tonga",
+      "duration": "1 Week",
+      "price": 7836,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Tonga",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "73d60082-7e66-4b07-8e97-d27cb7a6ede8",
+      "name": "Kiribati",
+      "duration": "1 Week",
+      "price": 1895,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Kiribati",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "4be06947-4731-4527-8df2-fbee7481e0a5",
+      "name": "Ghana",
+      "duration": "1 Week",
+      "price": 4327,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Ghana",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "589b32a9-d4fb-423d-aabe-62f41da32941",
+      "name": "Chad",
+      "duration": "1 Week",
+      "price": 8130,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Chad",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "b6a4f0e4-bdc0-49f7-a2bc-120c81773871",
+      "name": "Zimbabwe",
+      "duration": "1 Week",
+      "price": 4617,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Zimbabwe",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "fd3c64a3-4a0f-40c4-a5f0-f821ca3abba6",
+      "name": "Saint Martin",
+      "duration": "1 Week",
+      "price": 5654,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Saint Martin",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "04a77a37-2877-4893-9c20-bfc0897a53de",
+      "name": "Mongolia",
+      "duration": "1 Week",
+      "price": 6467,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Mongolia",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "89c5176e-2fb4-4e01-834d-4eac77fe52d5",
+      "name": "Portugal",
+      "duration": "1 Week",
+      "price": 4750,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Portugal",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "00ffed5c-6564-40f1-acf0-f806672dcc22",
+      "name": "American Samoa",
+      "duration": "1 Week",
+      "price": 6826,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "American Samoa",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "f2a968c6-7a3c-4671-bb08-f8d1c0167668",
+      "name": "Republic of the Congo",
+      "duration": "1 Week",
+      "price": 5921,
+      "about": "Africa",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Republic of the Congo",
+          "duration": "1 კვირა",
+          "about": "Africa"
+        }
+      }
+    },
+    {
+      "id": "a03c99a2-01a4-4334-9292-b8d8e9eb3abf",
+      "name": "Belgium",
+      "duration": "1 Week",
+      "price": 7728,
+      "about": "Europe",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Belgium",
+          "duration": "1 კვირა",
+          "about": "Europe"
+        }
+      }
+    },
+    {
+      "id": "473f04cd-e34e-47a5-9106-9893a0cbd440",
+      "name": "Israel",
+      "duration": "1 Week",
+      "price": 6057,
+      "about": "Asia",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Israel",
+          "duration": "1 კვირა",
+          "about": "Asia"
+        }
+      }
+    },
+    {
+      "id": "a92ec18f-0dde-489b-aba4-a1d98b748ab5",
+      "name": "New Zealand",
+      "duration": "1 Week",
+      "price": 4482,
+      "about": "Oceania",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "New Zealand",
+          "duration": "1 კვირა",
+          "about": "Oceania"
+        }
+      }
+    },
+    {
+      "id": "14247c8f-1ed6-4435-b0bd-93dbe2106ebf",
+      "name": "Nicaragua",
+      "duration": "1 Week",
+      "price": 1571,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Nicaragua",
+          "duration": "1 კვირა",
+          "about": "Americas"
+        }
+      }
+    },
+    {
+      "id": "49c748c8-56bc-4ee0-9286-10d9bb621229",
+      "name": "Anguilla",
+      "duration": "1 Week",
+      "price": 4552,
+      "about": "Americas",
+      "likes": 0,
+      "deleted": false,
+      "image": "",
+      "translations": {
+        "ka": {
+          "name": "Anguilla",
+          "duration": "1 კვირა",
+          "about": "Americas"
         }
       }
     }

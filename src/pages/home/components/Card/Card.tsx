@@ -215,24 +215,26 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
   const parentRef = React.useRef<HTMLDivElement>(null);
   const loadMoreRef = React.useRef<HTMLDivElement>(null);
 
-  const totalItems = data?.pages[0]?.items ?? 0;
+  const allRows = data ? data?.pages.flatMap((d) => d.data) : [];
 
   const rowVirtualizer = useVirtualizer({
-    count: totalItems,
+    count: hasNextPage ? allRows.length + 1 : allRows.length,
     getScrollElement: () => parentRef.current,
     estimateSize: () => 300,
     overscan: 5,
   });
 
+  const virtualItems = rowVirtualizer.getVirtualItems();
+
   React.useEffect(() => {
-    const [lastItem] = [...rowVirtualizer.getVirtualItems()].reverse();
+    const [lastItem] = [...virtualItems].reverse();
 
     if (!lastItem) {
       return;
     }
 
     if (
-      lastItem.index >= state.data.length - 1 &&
+      lastItem.index >= allRows.length - 1 &&
       hasNextPage &&
       !isFetchingNextPage
     ) {
@@ -241,9 +243,9 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
   }, [
     hasNextPage,
     fetchNextPage,
-    state.data.length,
+    allRows.length,
     isFetchingNextPage,
-    rowVirtualizer,
+    virtualItems,
   ]);
 
   if (isLoading) return <div>Loading...</div>;
@@ -298,9 +300,11 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
             position: 'relative',
           }}
         >
-          {rowVirtualizer.getVirtualItems().map((virtualRow) => {
+          {virtualItems.map((virtualRow) => {
             const isLoaderRow = virtualRow.index > state.data.length - 1;
-            const item = state.data[virtualRow.index];
+            const item = allRows[virtualRow.index];
+
+            if (!item) return;
 
             return (
               <div

@@ -10,7 +10,7 @@ const __dirname = dirname(__filename);
 const fetchCountries = async () => {
   try {
     const response = await axios.get('https://restcountries.com/v3.1/all');
-    return response.data.slice(0, 10);
+    return response.data;
   } catch (error) {
     console.error(error);
     return [];
