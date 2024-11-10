@@ -23,7 +23,10 @@ const App = () => {
   useEffect(() => {
     if (countries) {
       const allCountries = countries.pages.flat();
-      dispatch({ type: 'SET_DATA', payload: allCountries });
+      const formattedCountries = allCountries
+        .map((country) => country.data)
+        .flat();
+      dispatch({ type: 'SET_DATA', payload: formattedCountries });
     }
   }, [countries]);
 

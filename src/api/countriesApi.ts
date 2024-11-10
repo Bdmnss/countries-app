@@ -16,12 +16,12 @@ const axiosInstance = axios.create({
 export const fetchCountries = async (
   sortOrder: string,
   page: number,
-  limit: number
-): Promise<IData[]> => {
+  perPage: number
+): Promise<{ id: string, data: IData[], items: number }> => {
   const response = await axiosInstance.get(
-    `/countries?_sort=${sortOrder}&_page=${page}&_limit=${limit}`
+    `/countries?_sort=${sortOrder}&_page=${page}&_per_page=${perPage}`
   );
-  return response.data;
+  return { id: `${page}`, data: response.data.data, items: response.data.items };
 };
 
 export const fetchCountry = async (id: string): Promise<IData> => {
@@ -54,13 +54,15 @@ export const likeCountry = async (id: string): Promise<IData> => {
 };
 
 // Custom hooks
-export const useFetchCountries = (sortOrder: string, limit: number) => {
-  return useInfiniteQuery<IData[], Error>({
+export const useFetchCountries = (sortOrder: string, perPage: number) => {
+  return useInfiniteQuery<{
+    id: string; data: IData[], items: number 
+}, Error>({
     queryKey: ['countries', sortOrder],
     queryFn: ({ pageParam = 1 }) =>
-      fetchCountries(sortOrder, pageParam as number, limit),
+      fetchCountries(sortOrder, pageParam as number, perPage),
     getNextPageParam: (lastPage, allPages) => {
-      if (lastPage.length === limit) {
+      if (lastPage.data.length === perPage) {
         return allPages.length + 1;
       }
       return undefined;

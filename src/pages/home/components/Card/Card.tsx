@@ -62,7 +62,7 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
   const { lang } = useParams<{ lang: string }>();
   const [searchParams, setSearchParams] = useSearchParams();
   const sortOrder = searchParams.get('_sort') || 'likes';
-  const limit = 5;
+  const perPage = 5;
 
   const {
     data,
@@ -71,7 +71,7 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
     isFetchingNextPage,
     isLoading,
     error,
-  } = useFetchCountries(sortOrder, limit);
+  } = useFetchCountries(sortOrder, perPage);
 
   const addCountryMutation = useAddCountry();
   const updateCountryMutation = useUpdateCountry();
@@ -80,7 +80,7 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
 
   useEffect(() => {
     if (data) {
-      const allCountries = data.pages.flat();
+      const allCountries = data.pages.flatMap((page) => page.data);
       dispatch({ type: 'SET_DATA', payload: allCountries });
     }
   }, [data, dispatch]);
@@ -215,8 +215,10 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
   const parentRef = React.useRef<HTMLDivElement>(null);
   const loadMoreRef = React.useRef<HTMLDivElement>(null);
 
+  const totalItems = data?.pages[0]?.items ?? 0;
+
   const rowVirtualizer = useVirtualizer({
-    count: hasNextPage ? state.data.length + 1 : state.data.length,
+    count: totalItems,
     getScrollElement: () => parentRef.current,
     estimateSize: () => 300,
     overscan: 5,
@@ -318,9 +320,9 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
               >
                 {isLoaderRow ? (
                   hasNextPage ? (
-                    'Loading more...'
+                    <div>Loading more...</div>
                   ) : (
-                    'Nothing more to load'
+                    <div>Nothing more to load</div>
                   )
                 ) : (
                   <>
