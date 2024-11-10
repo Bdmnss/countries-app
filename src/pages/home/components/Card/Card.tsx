@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import CardContent from '../card-content/CardContent';
@@ -62,7 +62,7 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
   const { lang } = useParams<{ lang: string }>();
   const [searchParams, setSearchParams] = useSearchParams();
   const sortOrder = searchParams.get('_sort') || 'likes';
-  const limit = 10;
+  const limit = 5;
 
   const {
     data,
@@ -213,38 +213,36 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
   };
 
   const parentRef = React.useRef<HTMLDivElement>(null);
+  const loadMoreRef = React.useRef<HTMLDivElement>(null);
 
   const rowVirtualizer = useVirtualizer({
-    count: state.data.length,
+    count: hasNextPage ? state.data.length + 1 : state.data.length,
     getScrollElement: () => parentRef.current,
     estimateSize: () => 300,
+    overscan: 5,
   });
 
-  const loadMoreRef = useRef<HTMLDivElement>(null);
+  React.useEffect(() => {
+    const [lastItem] = [...rowVirtualizer.getVirtualItems()].reverse();
 
-  const handleObserver = useCallback(
-    (entries: IntersectionObserverEntry[]) => {
-      const target = entries[0];
-      if (target.isIntersecting && hasNextPage && !isFetchingNextPage) {
-        fetchNextPage();
-      }
-    },
-    [fetchNextPage, hasNextPage, isFetchingNextPage]
-  );
+    if (!lastItem) {
+      return;
+    }
 
-  useEffect(() => {
-    const option = {
-      root: null,
-      rootMargin: '20px',
-      threshold: 1.0,
-    };
-    const observer = new IntersectionObserver(handleObserver, option);
-    const currentLoadMoreRef = loadMoreRef.current;
-    if (currentLoadMoreRef) observer.observe(currentLoadMoreRef);
-    return () => {
-      if (currentLoadMoreRef) observer.unobserve(currentLoadMoreRef);
-    };
-  }, [handleObserver]);
+    if (
+      lastItem.index >= state.data.length - 1 &&
+      hasNextPage &&
+      !isFetchingNextPage
+    ) {
+      fetchNextPage();
+    }
+  }, [
+    hasNextPage,
+    fetchNextPage,
+    state.data.length,
+    isFetchingNextPage,
+    rowVirtualizer,
+  ]);
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading countries</div>;
@@ -299,57 +297,75 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
           }}
         >
           {rowVirtualizer.getVirtualItems().map((virtualRow) => {
+            const isLoaderRow = virtualRow.index > state.data.length - 1;
             const item = state.data[virtualRow.index];
+
             return (
               <div
                 key={virtualRow.key}
                 className={`${styles['card-styles']} ${
-                  item.deleted ? styles['card-deleted'] : ''
+                  item?.deleted ? styles['card-deleted'] : ''
                 }`}
                 style={{
                   position: 'absolute',
                   top: 0,
                   left: 0,
                   width: '100%',
-                  height: '30rem',
+                  height: `${virtualRow.size}px`,
                   transform: `translateY(${virtualRow.start}px)`,
                 }}
-                onClick={() => handleCardClick(item.id)}
+                onClick={() => handleCardClick(item?.id)}
               >
-                <CardHeader>
-                  <header className={styles['card-header']}>
-                    <p>{lang === 'ka' ? translateToGeorgian('New') : 'New'}</p>
-                    <p>
-                      {lang === 'ka' ? translateToGeorgian('Likes') : 'Likes'}:{' '}
-                      {item.likes}
-                    </p>
-                    <button onClick={(e) => handleLike(e, item.id)}>
-                      {lang === 'ka' ? translateToGeorgian('Like') : 'Like'}
-                    </button>
-                  </header>
-                </CardHeader>
-                <CardContent data={item} />
-                <CardFooter>
-                  <footer className={styles['card-footer']}>
-                    <div className={styles['card-footer-content']}>
-                      <p>
-                        {lang === 'ka' ? translateToGeorgian('View') : 'View'}
-                      </p>
-                    </div>
-                    <button onClick={(e) => handleEditClick(e, item.id)}>
-                      {lang === 'ka' ? translateToGeorgian('Edit') : 'Edit'}
-                    </button>
-                    <button onClick={(e) => handleDelete(e, item.id)}>
-                      {lang === 'ka'
-                        ? item.deleted
-                          ? translateToGeorgian('Recover')
-                          : translateToGeorgian('Delete')
-                        : item.deleted
-                          ? 'Recover'
-                          : 'Delete'}
-                    </button>
-                  </footer>
-                </CardFooter>
+                {isLoaderRow ? (
+                  hasNextPage ? (
+                    'Loading more...'
+                  ) : (
+                    'Nothing more to load'
+                  )
+                ) : (
+                  <>
+                    <CardHeader>
+                      <header className={styles['card-header']}>
+                        <p>
+                          {lang === 'ka' ? translateToGeorgian('New') : 'New'}
+                        </p>
+                        <p>
+                          {lang === 'ka'
+                            ? translateToGeorgian('Likes')
+                            : 'Likes'}
+                          : {item.likes}
+                        </p>
+                        <button onClick={(e) => handleLike(e, item.id)}>
+                          {lang === 'ka' ? translateToGeorgian('Like') : 'Like'}
+                        </button>
+                      </header>
+                    </CardHeader>
+                    <CardContent data={item} />
+                    <CardFooter>
+                      <footer className={styles['card-footer']}>
+                        <div className={styles['card-footer-content']}>
+                          <p>
+                            {lang === 'ka'
+                              ? translateToGeorgian('View')
+                              : 'View'}
+                          </p>
+                        </div>
+                        <button onClick={(e) => handleEditClick(e, item.id)}>
+                          {lang === 'ka' ? translateToGeorgian('Edit') : 'Edit'}
+                        </button>
+                        <button onClick={(e) => handleDelete(e, item.id)}>
+                          {lang === 'ka'
+                            ? item.deleted
+                              ? translateToGeorgian('Recover')
+                              : translateToGeorgian('Delete')
+                            : item.deleted
+                              ? 'Recover'
+                              : 'Delete'}
+                        </button>
+                      </footer>
+                    </CardFooter>
+                  </>
+                )}
               </div>
             );
           })}

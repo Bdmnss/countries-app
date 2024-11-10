@@ -1,5 +1,10 @@
 import axios from 'axios';
-import { useInfiniteQuery, useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import {
+  useInfiniteQuery,
+  useMutation,
+  useQuery,
+  useQueryClient,
+} from '@tanstack/react-query';
 import { IData } from '../pages/home/components/Card/cardReducer';
 
 const baseURL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
@@ -8,8 +13,14 @@ const axiosInstance = axios.create({
   baseURL,
 });
 
-export const fetchCountries = async (sortOrder: string, page: number, limit: number): Promise<IData[]> => {
-  const response = await axiosInstance.get(`/countries?_sort=${sortOrder}&_page=${page}&_limit=${limit}`);
+export const fetchCountries = async (
+  sortOrder: string,
+  page: number,
+  limit: number
+): Promise<IData[]> => {
+  const response = await axiosInstance.get(
+    `/countries?_sort=${sortOrder}&_page=${page}&_limit=${limit}`
+  );
   return response.data;
 };
 
@@ -46,7 +57,8 @@ export const likeCountry = async (id: string): Promise<IData> => {
 export const useFetchCountries = (sortOrder: string, limit: number) => {
   return useInfiniteQuery<IData[], Error>({
     queryKey: ['countries', sortOrder],
-    queryFn: ({ pageParam = 1 }) => fetchCountries(sortOrder, pageParam as number, limit),
+    queryFn: ({ pageParam = 1 }) =>
+      fetchCountries(sortOrder, pageParam as number, limit),
     getNextPageParam: (lastPage, allPages) => {
       if (lastPage.length === limit) {
         return allPages.length + 1;
