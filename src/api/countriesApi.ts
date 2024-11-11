@@ -40,11 +40,9 @@ export const fetchCountries = async (
           duration: string;
           about: string;
         };
-    };
-  }[];
-}>(
-    `/countries?_sort=${sortOrder}&_page=${page}&_per_page=${perPage}`
-  );
+      };
+    }[];
+  }>(`/countries?_sort=${sortOrder}&_page=${page}&_per_page=${perPage}`);
   return response.data;
 };
 
@@ -84,7 +82,7 @@ export const useFetchCountries = (sortOrder: string, perPage: number) => {
     queryFn: ({ pageParam = 1 }) =>
       fetchCountries(sortOrder, pageParam as number, perPage),
     getNextPageParam: (lastPage) => {
-      return lastPage.next
+      return lastPage.next;
     },
     initialPageParam: 1,
   });

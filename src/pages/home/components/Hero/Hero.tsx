@@ -1,7 +1,7 @@
 import styles from './Hero.module.css';
 
 const Hero: React.FC = () => {
-  const travelToGeorgiaArr = ['TravelToGeorgia'];
+  const travelToGeorgiaArr = ['TravelFromGeorgia'];
   const splitted = travelToGeorgiaArr[0].split('');
   return (
     <div className={styles['hero-overlay-styles']}>

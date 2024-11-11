@@ -39,7 +39,7 @@ const App = () => {
       <Routes>
         <Route path=":lang" element={<Layout />}>
           <Route
-            path="cities"
+            path="countries"
             element={
               <Suspense fallback={<Loading />}>
                 <CardPage state={state} dispatch={dispatch} />
@@ -47,7 +47,7 @@ const App = () => {
             }
           />
           <Route
-            path="cities/:id"
+            path="countries/:id"
             element={
               <Suspense fallback={<Loading />}>
                 <ArticlePage />
@@ -72,7 +72,7 @@ const App = () => {
           />
           <Route path="*" element={<NotFound />} />
         </Route>
-        <Route path="*" element={<Navigate to="/en/cities" />} />
+        <Route path="*" element={<Navigate to="/en/countries" />} />
       </Routes>
     </>
   );

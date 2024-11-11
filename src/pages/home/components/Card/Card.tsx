@@ -88,7 +88,7 @@ const Card: React.FC<CardProps> = ({ state, dispatch }) => {
   const handleCardClick = (id: string) => {
     const city = state.data.find((item) => item.id === id);
     if (city) {
-      navigate(`/${lang}/cities/${id}`, { state: { city } });
+      navigate(`/${lang}/countries/${id}`, { state: { city } });
     }
   };
 

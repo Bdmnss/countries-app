@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   return (
     <header className={classes['header-styles']}>
       <h1 className={classes['header-h1-styles']}>
-        {lang === 'ka' ? 'იმოგზაურე საქართველოში' : 'Travel To Georgia'}
+        {lang === 'ka' ? 'იმოგზაურე საქართველოდან' : 'Travel From Georgia'}
       </h1>
       <nav className={classes['header-nav-styles']}>
         {navigation.map((item, index) => (
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
             className={handleActiveNav}
             to={
               item === 'Home'
-                ? `/${lang}/cities`
+                ? `/${lang}/countries`
                 : `/${lang}/${item.toLowerCase()}`
             }
           >

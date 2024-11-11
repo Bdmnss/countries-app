@@ -18,23 +18,6 @@
       }
     },
     {
-      "id": "9a2eae03-7449-4279-9f31-ab94895c70a2",
-      "name": "Grenada",
-      "duration": "1 Week",
-      "price": 1733,
-      "about": "Americas",
-      "likes": 0,
-      "deleted": false,
-      "image": "",
-      "translations": {
-        "ka": {
-          "name": "Grenada",
-          "duration": "1 კვირა",
-          "about": "Americas"
-        }
-      }
-    },
-    {
       "id": "2fd1de47-f52b-4ec3-a9f6-30ca231395e1",
       "name": "Switzerland",
       "duration": "1 Week",
